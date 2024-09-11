@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    font-family: "Cairo", sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+}
+
+a:hover {
+    font-weight: 600;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
+    padding-left: 80px;
+    float: left;
+}
+
+#btn-header {
+    background-color: #FE7005;
+    border: none;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

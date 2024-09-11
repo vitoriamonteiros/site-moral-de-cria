@@ -10,12 +10,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 5rem;
+    padding-right: 100px;
 }
 
 a {
     font-family: "Cairo", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     text-decoration: none;
     color: black;
     margin: 1.8rem;
@@ -37,7 +37,7 @@ a:hover {
     background-color: #FE7005;
     color: #fff;
     font-family:"Cairo", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     border: none;
     border-radius: 8px;
