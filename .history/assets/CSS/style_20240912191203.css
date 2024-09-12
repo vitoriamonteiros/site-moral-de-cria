@@ -40,7 +40,7 @@ a:hover {
 #btn-header {
     background-color: #FE7005;
     color: #fff;
-    font-family: "Cairo", sans-serif;
+    font-family:"Cairo", sans-serif;
     font-size: 16px;
     font-weight: 600;
     border: none;
@@ -68,27 +68,13 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.titulo-container {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    color: #FE7005;
-    text-align: center;
+    position: absolute;
 }
 
 .texto-container {
     text-align: justify;
-    font-family: 'Inter', sans-serif;
 }
 
-#btn-saiba-mais {
-    padding: 10px 15px;
-    border-radius: 8px;
-    background-color: #FE7005;
-    border: none;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    float: right;
+#btn-saiba-mais{
+    position: relative;
 }

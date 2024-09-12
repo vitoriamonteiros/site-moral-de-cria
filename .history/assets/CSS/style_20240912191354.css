@@ -70,25 +70,15 @@ a:hover {
     gap: 10px;
 }
 
-.titulo-container {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    color: #FE7005;
-    text-align: center;
-}
-
 .texto-container {
     text-align: justify;
-    font-family: 'Inter', sans-serif;
 }
 
 #btn-saiba-mais {
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 8px;
     background-color: #FE7005;
     border: none;
     color: #fff;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    float: right;
 }

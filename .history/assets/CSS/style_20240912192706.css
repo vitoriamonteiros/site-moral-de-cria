@@ -90,5 +90,5 @@ a:hover {
     color: #fff;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    float: right;
+    align-items: flex-start;
 }

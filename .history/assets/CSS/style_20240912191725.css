@@ -75,7 +75,21 @@ a:hover {
     font-weight: 600;
     color: #FE7005;
     text-align: center;
+    position: relative; /* Necessário para posicionar a borda em relação ao texto */
+    display: inline-block; /* Garante que a borda se ajuste ao tamanho do texto */
 }
+
+.titulo-container::after {
+    content: ""; /* Necessário para criar o elemento da borda */
+    display: block; /* Faz a borda aparecer como um bloco */
+    width: 100%; /* Garante que a borda tenha a mesma largura que o texto */
+    height: 2px; /* Ajuste a altura da borda conforme necessário */
+    background-color: #FE7005; /* Cor da borda */
+    position: absolute; /* Posiciona a borda abaixo do texto */
+    bottom: -5px; /* Ajuste a distância da borda em relação ao texto */
+    left: 0; /* Alinha a borda ao início do texto */
+}
+
 
 .texto-container {
     text-align: justify;
@@ -90,5 +104,4 @@ a:hover {
     color: #fff;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    float: right;
 }
