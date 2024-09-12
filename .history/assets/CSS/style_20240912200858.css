@@ -60,6 +60,7 @@ a:hover {
 }
 
 .content {
+    max-width: 60vw;
     width: 100%;
     padding: 1.25rem;
     box-sizing: border-box;
