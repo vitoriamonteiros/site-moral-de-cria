@@ -105,3 +105,58 @@ a:hover {
     font-weight: 500;
     float: right;
 }
+
+.container-impacto {
+    width: 100%;
+    height: 400px;
+    background-image: url("img/impacto_fundo.png");
+    background-size: cover;
+    margin: none;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.titulo-impacto{
+    color: #ffffff;
+    font-family: "cairo";
+    text-align: center;
+    font-weight: 600;
+    font-size: 45px;
+
+}
+
+.dados-container{
+    display: flex;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "inter";
+    justify-content: space-around;
+    margin: 10%;
+
+}
+
+.opacidade{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    margin: none;
+    justify-content: center;
+    justify-items: center;
+    background: #5C2FCA70;
+}
+
+.titulo-dados {
+    color: #4897D4;
+    font-size: 45px;
+    font-family:"cairo";
+    font-weight: 900;
+    
+}
+
+.dados-container p {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "inter";
+    text-align: center;
+}
