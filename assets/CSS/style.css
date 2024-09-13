@@ -109,7 +109,6 @@ a:hover {
 .container-impacto {
     width: 100%;
     height: 400px;
-    background-image: url("assets/CSS/img/impacto_fundo.png");
     background-size: cover;
     margin: none;
     justify-content: center;
