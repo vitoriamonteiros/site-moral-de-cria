@@ -109,7 +109,7 @@ a:hover {
 .container-impacto {
     width: 100%;
     height: 400px;
-    background-image: url("assets/img/impacto_fundo.png");
+    background-image: url("../img/impacto.png");
     background-size: cover;
     margin: none;
     justify-content: center;
@@ -126,7 +126,7 @@ a:hover {
 
 }
 
-.dados-container{
+.container-dados{
     display: flex;
     color: #ffffff;
     font-size: 15px;
@@ -144,7 +144,7 @@ a:hover {
     
 }
 
-.dados-container p {
+.container-dados p {
     color: #ffffff;
     font-size: 15px;
     font-family: "inter";
