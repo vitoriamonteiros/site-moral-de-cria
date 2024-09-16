@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
+:root {
+    --linear-gradient: linear-gradient(90deg, #4897D4, #1E864B, #FE7005, #5C2FCA);
+
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -57,6 +63,7 @@ a:hover {
 
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 3.75rem;
@@ -68,31 +75,56 @@ a:hover {
     padding: 1.25rem;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .titulo-container {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
     color: #FE7005;
     text-align: center;
+    position: relative;
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+.titulo-container::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 640px;
+    background: var(--linear-gradient);
+    bottom: -8px;
+    border-radius: 15px;
 }
 
 .texto-container {
     text-align: justify;
     font-family: 'Inter', sans-serif;
+    margin-top: 20px;
+}
+
+.texto-container p {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
 #subtitulo {
     color: #5C2FCA;
-    font-weight: 600;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-family: 'Cairo', sans-serif;
+
 }
 
 #img-container{
-    max-width: 50vw;
+    min-width: 25vw;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 50px;
+    
 
 }
 
@@ -103,8 +135,9 @@ a:hover {
     border: none;
     color: #fff;
     font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     float: right;
+    font-size: 20px;
 }
 
 .container-impacto {
@@ -115,17 +148,31 @@ a:hover {
     margin: none;
     justify-content: center;
     justify-items: center;
+    height: 500px;
 
 }
 
 .titulo-impacto{
     color: #ffffff;
-    font-family: "cairo";
+    font-family: 'Cairo', sans-serif;
     text-align: center;
-    font-weight: 600;
-    font-size: 45px;
+    font-weight: 800;
+    font-size: 64px;
+    position: relative;
 
 }
+
+.titulo-impacto::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 217px;
+    background: var(--linear-gradient);
+    bottom: -8px;
+    border-radius: 15px;
+}
+
+
 
 .container-dados{
     display: flex;
@@ -134,60 +181,93 @@ a:hover {
     font-family: "inter";
     justify-content: space-around;
     margin: 10%;
+    
 
 }
 
+.dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .titulo-dados {
     color: #4897D4;
-    font-size: 45px;
+    font-size: 64px;
     font-family:"cairo";
-    font-weight: 900;
+    font-weight: 800;
     
 }
 
 .container-dados p {
     color: #ffffff;
-    font-size: 15px;
-    font-family: "inter";
+    font-size: 24px;
+    font-family: "cairo";
     text-align: center;
 }
 
 .container-loja h1 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
     color: #FE7005;
     text-align: center;
     margin:2%;
+    font-size: 55px;
+    position: relative
+}
+
+.container-loja h1::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 460px;
+    background: var(--linear-gradient);
+    bottom: -8px;
+    border-radius: 15px;
+}
+
+.titulo-loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .texto-loja {
     color: black;
-    font-size: 15px;
-    font-family: "inter";
+    font-size: 20px;
+    font-family: 'inter', sans-serif;
     text-align: center;
     margin: 0;
+    font-weight: 400;
+    width: 70%;
 }
 
 .titulo-produto{
     align-items: center;
     text-align: center;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 .preço{
     color: #5C2FCA;
-    font-size: 45px;
+    font-size: 64px;
     font-family:"cairo";
-    font-weight: 900;
+    font-weight: 800;
     margin: 0;
     align-items: center;
+    
 }
 
 .btn-loja {
     background-color: #FE7005;
     color: #f9F9F9;
-    font-family: "Cairo", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -238,18 +318,45 @@ a:hover {
 }
 
 .titulo-projetos{
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
     color: #FE7005;
     text-align: center;
     margin: 2%;
+    font-size: 64px;
+    position: relative;
+    
+}
+
+#titulo-projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-projetos::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 460px;
+    background: var(--linear-gradient);
+    bottom: -8px;
+    border-radius: 15px;
 }
 
 .text-projetos{
     color: black;
-    font-size: 15px;
-    font-family: "inter";
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
     text-align: center;
+    font-weight: 400;
+    width: 80%;
+}
+
+.container-projetos {
+    width: 75%;
+    margin-bottom: 200px;
 }
 
 .container-projetos img {
@@ -286,6 +393,28 @@ a:hover {
 .nos-acompanhe {
     margin-top: 50px;
     position: relative;
+    
+}
+
+.nos-acompanhe h1 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
+    color: #FE7005;
+    text-align: center;
+    margin: 2%;
+    font-size: 64px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.nos-acompanhe h1::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 815px;
+    background: var(--linear-gradient);
+    bottom: -8px;
+    border-radius: 15px;
 }
 
 .moral-2 {
@@ -358,6 +487,7 @@ a:hover {
 .casa-formacao .icone {
     rotate: 24deg;
     top: -20px;
+    right: 20px;
 } 
 
 .casa-formacao .container-img {
@@ -376,7 +506,7 @@ a:hover {
 .casa-insta {
     display: flex;
     justify-content: right;
-    translate: -50px -15px;
+    translate: -70px -15px;
 }
 .casa-insta a {
     background-color: #ffffff;
@@ -392,6 +522,26 @@ a:hover {
     
 }
 
+.parceiros h1 {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
+    color: #FE7005;
+    text-align: center;
+    margin: 2%;
+    font-size: 64px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.parceiros h1::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 255px;
+    background: var(--linear-gradient);
+    bottom: -8px;
+    border-radius: 15px;
+}
 
 footer {
     background-color: #0e0e0e;
