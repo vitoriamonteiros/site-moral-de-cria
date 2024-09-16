@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 * {
     margin: 0;
@@ -280,5 +281,204 @@ a:hover {
     color: #F9F9F9;
     font-size: 20px;
     font-family: '' "cairo";
+}
+
+.nos-acompanhe {
+    margin-top: 50px;
+    position: relative;
+}
+
+.moral-2 {
+    height: 497px;
+    width: 100%;
+    background-color: #4897D4;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 0px;
+    
+}
+
+.moral-2 a {
+    background-color: #ffffff;
+    padding: 0px 10px 10px 120px;
+    width: 384px;
+    height: 58px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 35px;
+    display: flex;
+    
+}
+
+.icone {
+    
+    width: 100px;
+    position: absolute;
+    top: -10px;
+}
+
+.moral2-insta {
+    translate: 0px -14px;
+}
+
+.container-img{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color:  #4897D4;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    padding-left: 120px; 
+    padding-right: 120px; 
+    
+    
+}
+
+.moral2-img img {
+    border-radius: 15px;
+}
+
+.casa-formacao {
+    height: 497px;
+    width: 100%;
+    background-color:#5C2FCA;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    position: relative;
+    padding-top: 0px;
+    
+}
+
+.casa-formacao .icone {
+    rotate: 24deg;
+    top: -20px;
+} 
+
+.casa-formacao .container-img {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    background-color:  #5C2FCA;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    padding-left: 120px; 
+    padding-right: 120px; 
+    
+}
+
+.casa-insta {
+    display: flex;
+    justify-content: right;
+    translate: -50px -15px;
+}
+.casa-insta a {
+    background-color: #ffffff;
+    padding: 0px 10px 10px 25px;
+    width: 720px;
+    height: 58px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 35px;
+    display: flex;
+    
+}
+
+
+footer {
+    background-color: #0e0e0e;
+
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #4897D4;
+}
+
+.footer-logo img {
+    width: 175px;
+}
+
+.footer-logo p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Cairo;
+    margin-top: 20px;
+}
+
+.redes-sociais .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.redes-sociais .nav-bar a {
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociais .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    width: 35%;
+    font-weight: 400;
+    padding-bottom: 30px;
+    
+}
+
+.redes-sociais .redes p {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.redes-container a {
+    color: white;
+    padding: 0;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.direitos {
+    background-color: rgb(25, 25, 25, 0.95);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
 }
 
