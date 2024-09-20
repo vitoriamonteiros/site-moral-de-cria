@@ -1,1 +1,458 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
+:root {
+    --linear-gradient: linear-gradient(90deg, #4897D4, #1E864B, #FE7005, #5C2FCA);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #191919;
+    font-weight: 500;
+}
+
+a {
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    margin: 1.8rem;
+}
+
+a:hover {
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.logo {
+    height: 6.25rem;
+    width: auto;
+    padding-left: 5rem;
+    padding-right: 6.25rem;
+}
+
+#btn-header {
+    background-color: #FE7005;
+    color: #fff;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 2.5rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+
+}
+
+.img-sobreNos{
+    display: flex;
+    background-image: url(../img/sobre-nos.png);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    margin: none;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.img-sobreNos h1 {
+    color: #ffffff;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 64px;
+    position: relative;
+    margin-top: 2.5em;
+}
+
+.sobreNos::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 290px;
+    background: var(--linear-gradient);
+    margin-top: 1.3em;
+    border-radius: 15px;
+}
+
+.titulo-sobreNos{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 600;
+    color: #5C2FCA;
+    text-align: center;
+    align-items: center;
+    margin: 2%;
+    font-size: 36px;
+    position: relative;
+}
+
+.texto-sobreNos p {
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #191919;
+    margin: 20px;
+    text-align: justify;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.box-titulo {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    margin: none;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.box-titulo h1 {
+    color: #FE7005;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 64px;
+    position: relative;
+    margin-top: 2.0em;
+}
+
+.titulo-missao::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 650px;
+    background: var(--linear-gradient);
+    margin-top: 1.3em;
+    border-radius: 15px;
+}
+
+.caixas-missao{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 293px;
+    align-items: center;
+    background-color: #d9d9d9;
+    position: relative;
+   
+    
+}
+
+.caixas-missao h2{
+    position: relative;
+    font-family: 'cairo' sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    margin-top: auto;
+
+   
+}
+
+.caixas-missao p {
+    font-family: 'inter';
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2.3em;
+
+}
+
+.icone{
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    color: #ffffff ;
+    margin-top: 2.5%;
+
+}
+
+.missao{
+    width: 320px;
+    height: 320px;
+    background-color: #1E864B;
+    border-radius: 15%;
+    text-align: center;
+    position: relative;
+    margin-top: -15em;
+    border-bottom-style: solid;
+    border-bottom-width: 1vh;
+    border-bottom-color: #FE7005;
+    border-right-style: solid;
+    border-right-width: 1vh;
+    border-right-color: #FE7005;
+    
+}
+
+.visao{
+    width: 320px;
+    height: 320px;
+    background-color: #5C2FCA;
+    border-radius: 15%;
+    text-align: center;
+    position: relative;
+    margin-top: -15em;
+    border-bottom-style: solid;
+    border-bottom-width: 1vh;
+    border-bottom-color: #FE7005;
+    border-right-style: solid;
+    border-right-width: 1vh;
+    border-right-color: #FE7005;
+
+}
+
+.valores{
+    width: 320px;
+    height: 320px;
+    background-color: #4897D4;
+    border-radius: 15%;
+    text-align: center;
+    position: relative;
+    margin-top: -15em;
+    border-bottom-style: solid;
+    border-bottom-width: 1vh;
+    border-bottom-color: #FE7005;
+    border-right-style: solid;
+    border-right-width: 1vh;
+    border-right-color: #FE7005;
+
+}
+
+.nossaequipe {
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    margin: none;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+.nossaequipe h1{
+    color: #FE7005;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 64px;
+    position: relative;
+    margin-top: 2.0em;
+}
+
+.titulo-equipe::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 380px;
+    background: var(--linear-gradient);
+    margin-top: 1.3em;
+    border-radius: 15px;
+}
+
+.box-equipe1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    position: relative;
+    
+
+}
+
+.img-box1{
+    display: flex;
+    position: static;
+    width: 10px;
+    justify-content: space-evenly;
+ 
+}
+
+.box-equipe2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    position: relative;
+    
+}
+
+.img-box2{
+    display: flex;
+    position: static;
+    width: 10px;
+    justify-content: space-evenly;
+}
+ 
+.equipeAzul{
+    display: flex;
+    width: 250px;
+    height: 350px;
+    background-color: #4897D4;
+    text-align: center;
+    align-items: center;
+    border-radius: 15%;
+    justify-content: center;
+    
+    
+}
+
+.equipeLaranja{
+    display: flex;
+    width: 250px;
+    height: 350px;
+    background-color: #FE7005;
+    text-align: center;
+    align-items: center;
+    border-radius: 15%;
+    justify-content: center;
+
+}
+
+.equipeVerde{
+    display: flex;
+    width: 250px;
+    height: 350px;
+    background-color: #1E864B;
+    text-align: center;
+    align-items: center;
+    border-radius: 15%;
+    justify-content: center;
+
+}
+
+.equipeRoxa{
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 350px;
+    background-color: #5C2FCA;
+    align-items: center;
+    border-radius: 15%;
+    justify-content: center;
+    
+
+}
+
+.nome{
+    position: relative;
+    font-size: 24px;
+    font-family: 'cairo' sans-serif;
+    font-weight: 600;
+
+}
+
+.cargo{
+    position: relative;
+    font-size: 20px;
+    font-family: 'inter' sans-serif;
+    font-weight: 400;
+    
+}
+
+footer {
+    background-color: #0e0e0e;
+    margin-top: 5%;
+
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #4897D4;
+}
+
+.footer-logo img {
+    width: 175px;
+}
+
+.footer-logo p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Cairo;
+    margin-top: 20px;
+}
+
+.redes-sociais .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.redes-sociais .nav-bar a {
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociais .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    width: 35%;
+    font-weight: 400;
+    padding-bottom: 30px;
+    
+}
+
+.redes-sociais .redes p {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.redes-container a {
+    color: white;
+    padding: 0;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.direitos {
+    background-color: rgb(25, 25, 25, 0.95);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
