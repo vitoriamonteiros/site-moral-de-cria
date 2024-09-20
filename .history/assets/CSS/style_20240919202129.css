@@ -149,6 +149,7 @@ a:hover {
     height: 400px;
     background-image: url("../img/impacto.png");
     background-size: cover;
+    background-repeat: no-repeat;
     margin: none;
     justify-content: center;
     justify-items: center;
@@ -176,6 +177,8 @@ a:hover {
     border-radius: 15px;
 }
 
+
+
 .container-dados {
     display: flex;
     color: #ffffff;
@@ -183,7 +186,6 @@ a:hover {
     font-family: "inter";
     justify-content: space-around;
     margin: 10%;
-
 }
 
 .dados {
@@ -442,6 +444,7 @@ a:hover {
     font-weight: 800;
     font-size: 35px;
     display: flex;
+
 }
 
 .icone {
@@ -465,6 +468,8 @@ a:hover {
     justify-content: space-around;
     padding-left: 120px;
     padding-right: 120px;
+
+
 }
 
 .moral2-img img {

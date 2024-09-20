@@ -442,6 +442,7 @@ a:hover {
     font-weight: 800;
     font-size: 35px;
     display: flex;
+
 }
 
 .icone {
@@ -465,6 +466,8 @@ a:hover {
     justify-content: space-around;
     padding-left: 120px;
     padding-right: 120px;
+
+
 }
 
 .moral2-img img {

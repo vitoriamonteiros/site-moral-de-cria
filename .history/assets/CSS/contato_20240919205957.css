@@ -1,0 +1,36 @@
+:root {
+    --linear-gradient: linear-gradient(90deg, #4897D4, #1E864B, #FE7005, #5C2FCA);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: auto; 
+    background-image: url("/assets/img/contato-fundo.png");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+.texto-container, .info-container, .icones-sociais {
+    flex: 1; 
+}
+
+.formulario-container {
+    flex: 1; 
+    margin-left: 20px;
+}
+
+.map {
+    width: 100%; 
+    margin-top: 20px; 
+}

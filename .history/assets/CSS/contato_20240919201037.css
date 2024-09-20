@@ -1,0 +1,11 @@
+:root {
+    --linear-gradient: linear-gradient(90deg, #4897D4, #1E864B, #FE7005, #5C2FCA);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
