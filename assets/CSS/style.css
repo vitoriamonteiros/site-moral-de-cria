@@ -60,8 +60,19 @@ a:hover {
     height: 2.5rem;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
+    position: fixed;
+    z-index: 3;
+    right: 20px;
+    bottom: 120px;
 
+}
 
+.redes-header a {
+    color: #191919;
+    padding: 0;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 
