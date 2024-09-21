@@ -21,6 +21,7 @@ header {
     top: 0;
     z-index: 3;
     background-color: #fff;
+    height:80px ;
 }
 
 nav a {
@@ -66,7 +67,7 @@ a:hover {
     display: flex;
     background-image: url(../img/sobre-nos.png);
     width: 100%;
-    height: 500px;
+    height: 350px;
     background-size: cover;
     margin: none;
     justify-content: center;
@@ -96,7 +97,7 @@ a:hover {
 
 .titulo-sobreNos{
     font-family: 'Cairo', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     color: #5C2FCA;
     text-align: center;
     align-items: center;
@@ -114,12 +115,23 @@ a:hover {
     text-align: justify;
     margin-left: 5rem;
     margin-right: 5rem;
+
+}
+
+.texto-sobreNos #bold {
+    text-align: center;
+}
+
+.container-missao {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .box-titulo {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 380px;
     background-size: cover;
     margin: none;
     justify-content: center;
@@ -134,7 +146,8 @@ a:hover {
     font-weight: 800;
     font-size: 64px;
     position: relative;
-    margin-top: 2.0em;
+    margin-top: 1.2em;
+    ;
 }
 
 .titulo-missao::before{
@@ -147,9 +160,11 @@ a:hover {
     border-radius: 15px;
 }
 
+
 .caixas-missao{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
     height: 293px;
     align-items: center;
@@ -161,8 +176,9 @@ a:hover {
 
 .caixas-missao h2{
     position: relative;
-    font-family: 'cairo' sans-serif;
+    font-family: 'Cairo' sans-serif;
     font-size: 48px;
+    font-weight: 700;
     color: #ffffff;
     margin-top: auto;
 
@@ -170,12 +186,14 @@ a:hover {
 }
 
 .caixas-missao p {
-    font-family: 'inter';
+    font-family: "inter", sans-serif;
     font-size: 16px;
+    font-weight: 600;
     align-items: center;
     text-align: center;
     color: #ffffff;
     margin-bottom: 2.3em;
+    padding: 20px;
 
 }
 
@@ -188,9 +206,9 @@ a:hover {
 
 }
 
-.missao{
-    width: 320px;
-    height: 320px;
+#missao{
+    width: 384px;
+    height: 374px;
     background-color: #1E864B;
     border-radius: 15%;
     text-align: center;
@@ -205,9 +223,9 @@ a:hover {
     
 }
 
-.visao{
-    width: 320px;
-    height: 320px;
+#visao{
+    width: 384px;
+    height: 374px;
     background-color: #5C2FCA;
     border-radius: 15%;
     text-align: center;
@@ -222,9 +240,9 @@ a:hover {
 
 }
 
-.valores{
-    width: 320px;
-    height: 320px;
+#valores{
+    width: 384px;
+    height: 374px;
     background-color: #4897D4;
     border-radius: 15%;
     text-align: center;
@@ -239,17 +257,7 @@ a:hover {
 
 }
 
-.nossaequipe {
-    display: flex;
-    width: 100%;
-    background-size: cover;
-    margin: none;
-    justify-content: center;
-    justify-items: center;
-    
-}
-
-.nossaequipe h1{
+.titulo-equipe{
     color: #FE7005;
     font-family: 'Cairo', sans-serif;
     text-align: center;
@@ -268,6 +276,18 @@ a:hover {
     margin-top: 1.3em;
     border-radius: 15px;
 }
+
+/* .nossaequipe {
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    margin: none;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+
 
 .box-equipe1{
     display: flex;
@@ -366,6 +386,7 @@ a:hover {
     font-weight: 400;
     
 }
+*/
 
 footer {
     background-color: #0e0e0e;
