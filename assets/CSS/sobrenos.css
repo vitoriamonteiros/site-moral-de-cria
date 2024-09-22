@@ -265,6 +265,7 @@ a:hover {
     font-size: 64px;
     position: relative;
     margin-top: 2.0em;
+    margin-bottom: 50px;
 }
 
 .titulo-equipe::before{
@@ -275,6 +276,57 @@ a:hover {
     background: var(--linear-gradient);
     margin-top: 1.3em;
     border-radius: 15px;
+}
+
+#equipe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.membro {
+    
+    width: 282px;
+    height: 551px;
+    background-image: url('../img/maos.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column-reverse
+}
+
+.membro-box {
+    height: 401px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+     
+}
+
+
+#membro-1, #membro-6 {
+    background-color: #5C2FCA;
+}
+
+#membro-2, #membro-7 {
+    background-color: #4897D4;
+}
+
+#membro-3, #membro-8 {
+    background-color: #1E864B;
+}
+
+#membro-4, #membro-5 {
+    background-color: #FE7005;
+}
+
+.membro-box:hover {
+    cursor: pointer;
+    
 }
 
 /* .nossaequipe {
