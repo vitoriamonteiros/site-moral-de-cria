@@ -67,7 +67,7 @@ a:hover {
 
 .titulo{
     display: flex;
-    background-image: url(../assets/img/contato.png);
+    background-image: url(../img/contato.png);
     width: 100%;
     height: 500px;
     background-size: cover;
