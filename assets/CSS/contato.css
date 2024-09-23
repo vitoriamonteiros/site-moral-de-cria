@@ -1,5 +1,10 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
 :root {
     --linear-gradient: linear-gradient(90deg, #4897D4, #1E864B, #FE7005, #5C2FCA);
+
 }
 
 * {
@@ -8,20 +13,68 @@
     box-sizing: border-box;
 }
 
-body {
-    overflow-x: hidden;
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #fff;
 }
 
-.container {
+nav a {
+    text-decoration: none;
+    color: #191919;
+    font-weight: 500;
+}
+
+a {
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    margin: 1.8rem;
+}
+
+a:hover {
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.logo {
+    height: 6.25rem;
+    width: auto;
+    padding-left: 5rem;
+    padding-right: 6.25rem;
+}
+
+#btn-header {
+    background-color: #FE7005;
+    color: #fff;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 2.5rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+
+}
+
+
+
+.titulo{
+    display: flex;
+    background-image: url(../assets/img/contato.png);
     width: 100%;
-    height: 300px;
-    background-image: url("/assets/img/contato-fundo.png");
+    height: 500px;
     background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
     margin: none;
     justify-content: center;
     justify-items: center;
+    
 }
 
 .titulo-container {
@@ -29,46 +82,231 @@ body {
     font-family: 'Cairo', sans-serif;
     text-align: center;
     font-weight: 800;
-    font-size: 50px;
+    font-size: 64px;
+    position: relative;
+    margin-top: 2.5em;
+}
+
+.titulo-container::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 220px;
+    background: var(--linear-gradient);
+    margin-top: 1.5em;
+    border-radius: 15px;
+}
+
+.fale-conosco {
+    display: flex;
+    width: 600px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 800;
+    color: #5C2FCA;
+    left: 20%;
+    margin-top: 5%;
+    font-size: 36px;
+    position: relative;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    margin-top: 1%;
+
+ }
+
+ .info-container{
+    width: 600px;
+    text-align: justify;
+    align-items: center;
+    
+
+ }
+
+.container p {
+    font-family: 'inter' sans-serif;
+    font-size: 20px;
     position: relative;
 
 }
 
-.titulo-container::before {
-    position: absolute;
-    content: '';
-    height: 6px;
-    width: 217px;
-    background: var(--linear-gradient);
-    bottom: -8px;
-    border-radius: 15px;
-}
+.info-container h4 {
+    margin-top: 2%;
+    font-size: 20px;
 
-.texto-container {
-    position: absolute;
-    top: 50%;
-    left: 30px;
-    transform: translateY(-50%);
-    margin-top: 50px;
-}
-
-.info-container {
-    position: relative; 
-    padding: 30px;
-    margin-top: 300px; 
-    left: 30px;
 }
 
 .icones-sociais {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 350px;
+    display: flex;
+    position: relative;
+    left: 110px;
+    margin-top: -180px;
+
+
 }
 
 .icones-sociais a {
     text-decoration: none; 
-    padding: 5px;
+   
+}
+
+.formulario-container{
+
+    width: 500px;
+    align-items: top;
+    padding: 2%;
+    margin-top: -3%;
+    flex-direction: column;
+
+
+}
+
+.form-group input {
+    outline: unset;
+    width: 450px;
+    height: 250px;
+    border: 1px solid #FE7005;
+    border-radius: 8%;
+    margin-top: 4%;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    height: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+
+}
+
+.form-group textarea{
+    outline: unset;
+    width: 450px;
+    padding: 3rem;
+    border: 1px solid #FE7005;
+    border-radius: 8%;
+    margin-top: 3%;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.botao{
+    width: 450px;
+    background-color: #FE7005;
+    color: #fff;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 2.5rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    
 }
 
 .map {
-    margin-top: 50px;
+    width: 100%;
+    margin: none;
+    margin-top: 10%;
+   
+}
+
+footer {
+    background-color: #0e0e0e;
+    margin-top: 0;
+
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #4897D4;
+}
+
+.footer-logo img {
+    width: 175px;
+}
+
+.footer-logo p {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: Cairo;
+    margin-top: 20px;
+}
+
+.redes-sociais .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.redes-sociais .nav-bar a {
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redes-sociais .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    width: 35%;
+    font-weight: 400;
+    padding-bottom: 30px;
+    
+}
+
+.redes-sociais .redes p {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.redes-container a {
+    color: white;
+    padding: 0;
+    margin: 5px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.direitos {
+    background-color: rgb(25, 25, 25, 0.95);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    height: 67px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
 }
