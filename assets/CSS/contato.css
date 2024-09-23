@@ -184,6 +184,7 @@ a:hover {
 }
 
 .form-group textarea{
+    outline: unset;
     width: 450px;
     padding: 3rem;
     border: 1px solid #FE7005;
