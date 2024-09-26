@@ -36,11 +36,14 @@ a {
     font-family: "Cairo", sans-serif;
     font-size: 16px;
     margin: 1.8rem;
+    transition: 0.3s;
 }
 
 a:hover {
-    font-weight: 600;
-    opacity: 0.7;
+    font-weight: 800;
+
+    border-bottom: 3px solid #FE7005;
+    transition: 0.3s;
 }
 
 #logo {
@@ -62,19 +65,16 @@ a:hover {
     height: 2.5rem;
     padding-left: 1.8rem;
     padding-right: 1.8rem;
-    position: fixed;
-    z-index: 3;
-    right: 20px;
-    bottom: 120px;
+    border: 1px solid #FE7005;
+    transition: 0.3s;
 
 }
 
-.redes-header a {
-    color: #191919;
-    padding: 0;
-    margin: 5px;
-    font-size: 24px;
-    font-weight: 400;
+#btn-header:active {
+    background-color: #fff;
+    color: #FE7005;
+    transition: 0.3s;
+
 }
 
 
@@ -155,6 +155,14 @@ a:hover {
     font-weight: 700;
     float: right;
     font-size: 20px;
+    border: 1px solid #FE7005;
+    transition: 0.3s;
+}
+
+#btn-saiba-mais:active {
+    background-color: #fff;
+    color: #FE7005;
+    transition: 0.3s;
 }
 
 .container-impacto {
@@ -290,6 +298,12 @@ a:hover {
     height: 2.5rem;
     padding-left: 1.3rem;
     padding-right: 1.3rem;
+    border: 1px solid #FE7005
+}
+
+.btn-loja:active {
+    background-color: #fff;
+    color: #FE7005;
 }
 
 .img-camiseta {
