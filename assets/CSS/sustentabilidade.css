@@ -124,7 +124,7 @@ a:hover {
     display: flex;
     width: 100%;
     padding: 5%;
-
+    
 }
 
 .ecocria {
@@ -143,7 +143,7 @@ a:hover {
     height: 6px;
     width: 630px;
     background: var(--linear-gradient);
-    margin-top: 6%;
+    bottom: -10%;
     border-radius: 15px;
     
 }
@@ -164,7 +164,7 @@ a:hover {
     height: 6px;
     width: 310px;
     background: var(--linear-gradient);
-    margin-top: 6%;
+    bottom: -10%;
     border-radius: 15px;
     
 }
@@ -184,7 +184,7 @@ a:hover {
     height: 6px;
     width: 420px;
     background: var(--linear-gradient);
-    margin-top: 6%;
+    bottom: -10%;
     border-radius: 15px;
     
 }
@@ -197,6 +197,10 @@ a:hover {
     font-family: 'inter';
     font-size: 20px;
 
+}
+
+.maos{
+    height: 150px;
 }
 
 .img-maos {
@@ -275,6 +279,11 @@ a:hover {
     font-family: '' "cairo";
 }
 
+.galeria{
+    display: flex;
+    width: 100%;
+    padding: 5%;
+}
 .galeria h1 {
     display: flex;
     width: 100%;
@@ -302,9 +311,11 @@ a:hover {
 }
 
 .imagens {
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
     margin-left: 10%;
+    margin-right: 10%; 
     
 }
 
