@@ -214,7 +214,6 @@ a:hover {
 .container-projetos {
     display: flex;
     width: 100%;
-    background-color: #F9F9F9;
     align-items: center;
     justify-items: center;
     justify-content: space-around;
@@ -284,6 +283,7 @@ a:hover {
     width: 100%;
     padding: 5%;
 }
+
 .galeria h1 {
     display: flex;
     width: 100%;
