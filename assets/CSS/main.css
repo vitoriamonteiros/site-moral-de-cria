@@ -199,11 +199,13 @@ a:hover {
 
 .container-dados {
     display: flex;
+    flex-direction: row;
     color: #ffffff;
     font-size: 15px;
     font-family: "inter";
     justify-content: space-around;
     margin: 10%;
+    width: 100%;
 
 }
 
@@ -212,6 +214,8 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 20%;
+    
 }
 
 .titulo-dados {
