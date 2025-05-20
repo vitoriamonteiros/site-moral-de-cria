@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
@@ -77,7 +78,8 @@ a:hover {
 
 }
 
-#img-projetos{
+
+.img-projetos {
     display: flex;
     background-image: url(../img/projetos.png);
     width: 100%;
@@ -86,44 +88,173 @@ a:hover {
     margin: none;
     justify-content: center;
     justify-items: center;
-    
 }
 
-#img-projetos h1 {
+.projetos {
     color: #ffffff;
     font-family: 'Cairo', sans-serif;
     text-align: center;
     font-weight: 800;
     font-size: 64px;
     position: relative;
-    margin-top: 2.5em;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#img-projetos h1::before{
+.projetos::before {
     position: absolute;
     content: '';
     height: 6px;
-    width: 290px;
+    width: 230px;
     background: var(--linear-gradient);
-    margin-top: 1.3em;
+    bottom: 38%;
+    border-radius: 15px;  
+}
+
+#container-projetos{
+    margin-left: 8em;
+    margin-right: 8em;
+   
+ }
+
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3.75rem;
+    box-sizing: border-box;  
+    
+}
+
+
+
+.projeto-conteudo {
+    width: 100%;
+    padding: 1.25rem;
+    margin-top: 3em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;  
+    justify-content: space-between;
+      
+}
+
+
+
+.sustentabilidade-titulo  {
+    color: #FE7005;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    position: relative;
+    margin-top: 1.2em;    
+}
+
+
+.sustentabilidade-titulo::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 800px;
+    background: var(--linear-gradient);
+    bottom: -8px;
     border-radius: 15px;
 }
 
 
+.capacitacao-titulo  {
+    color: #FE7005;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 64px;
+    position: relative;
+    margin-top: 1.2em;
+}
 
 
+.capacitacao-titulo::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 690px;
+    background: var(--linear-gradient);
+    bottom: -8px;
+    border-radius: 15px;
+}
 
 
+.esporte-titulo  {
+    color: #FE7005;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    font-weight: 800;
+    font-size: 64px;
+    position: relative;
+    margin-top: 1.2em;
+}
 
 
+.esporte-titulo::before{
+    position: absolute;
+    content: '';
+    height: 6px;
+    width: 480px;
+    background: var(--linear-gradient);
+    bottom: -8px;
+    border-radius: 15px;
+}
+
+#imagem-conteudo{
+    width: 486px;
+    height: 380px;
+    border-radius: 50px;    
+}
 
 
+.projeto-texto {
+    text-align: justify;
+    margin-top: 20px;
+   
+}
 
 
+.projeto-texto p {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+#btn-saiba-mais {
+    padding: 0.625rem 1rem;
+    border-radius: 8px;
+    background-color: #FE7005;
+    border: none;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    float: right;
+    font-size: 20px;
+
+}
 
 
+.transforme-vidas{
+    background-color: #4897D4;
+
+}
 
 
+.foto-transformar{
+    width: 100%;
+
+}
 
 footer {
     background-color: #0e0e0e;
@@ -138,10 +269,12 @@ footer {
     padding-top: 60px;
     padding-bottom: 30px;
     border-bottom: 1px solid #4897D4;
+
 }
 
 .footer-logo img {
     width: 175px;
+
 }
 
 .footer-logo p {
@@ -150,6 +283,7 @@ footer {
     font-size: 20px;
     font-family: Cairo;
     margin-top: 20px;
+
 }
 
 .redes-sociais .nav-bar {
@@ -165,6 +299,7 @@ footer {
     color: #ffffff;
     font-size: 24px;
     font-weight: 400;
+
 }
 
 .redes-sociais {
@@ -172,6 +307,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .redes-sociais .redes {
@@ -191,6 +327,7 @@ footer {
     margin: 0;
     font-size: 24px;
     font-weight: 400;
+
 }
 
 .redes-container a {
@@ -199,6 +336,7 @@ footer {
     margin: 5px;
     font-size: 24px;
     font-weight: 400;
+
 }
 
 .direitos {
@@ -213,4 +351,5 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
+    
 }
