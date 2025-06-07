@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+:root {
+    --linear-gradient: linear-gradient(90deg, #4897D4, #1E864B, #FE7005, #5C2FCA);
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #fff;
+    height: 80px ;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #191919;
+    font-weight: 500;
+}
+
+a {
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    margin: 1.8rem;
+    transition: 0.3s;
+}
+
+a:hover {
+    font-weight: 800;
+    border-bottom: 3px solid #FE7005;
+    transition: 0.3s;
+}
+
+.logo {
+    height: 6.25rem;
+    width: auto;
+    padding-left: 5rem;
+    padding-right: 6.25rem;
+}
+
+#btn-header {
+    background-color: #FE7005;
+    color: #fff;
+    font-family: "Cairo", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 2.5rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    border: 1px solid #FE7005;
+    transition: 0.3s;
+}
+
+#btn-header:active {
+    background-color: #fff;
+    color: #FE7005;
+    transition: 0.3s;
+
+}

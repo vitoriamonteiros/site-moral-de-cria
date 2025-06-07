@@ -22,7 +22,7 @@ header {
     top: 0;
     z-index: 3;
     background-color: #fff;
-    height: 80px;
+    height: 80px ;
 }
 
 
@@ -41,12 +41,11 @@ a {
 
 a:hover {
     font-weight: 800;
-
     border-bottom: 3px solid #FE7005;
     transition: 0.3s;
 }
 
-#logo {
+.logo {
     height: 6.25rem;
     width: auto;
     padding-left: 5rem;
@@ -67,7 +66,6 @@ a:hover {
     padding-right: 1.8rem;
     border: 1px solid #FE7005;
     transition: 0.3s;
-
 }
 
 #btn-header:active {
@@ -355,7 +353,7 @@ a:hover {
 .container-projetos {
     display: flex;
     width: 100%;
-    background-color: #F9F9F9;
+    /* background-color: #F9F9F9; */
     align-items: center;
     justify-items: center;
     justify-content: space-around;
@@ -623,7 +621,7 @@ footer {
 
 .redes-sociais .nav-bar a {
     text-decoration: none;
-    color: #ffffff;
+    color:#ffffff;
     font-size: 24px;
     font-weight: 400;
 }

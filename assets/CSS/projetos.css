@@ -47,7 +47,7 @@ a:hover {
     transition: 0.3s;
 }
 
-#logo {
+.logo {
     height: 6.25rem;
     width: auto;
     padding-left: 5rem;
