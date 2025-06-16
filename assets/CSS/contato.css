@@ -22,6 +22,7 @@ header {
     top: 0;
     z-index: 3;
     background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     height:80px ;
 }
 
@@ -33,14 +34,13 @@ nav a {
 
 a {
     font-family: "Cairo", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     margin: 1.8rem;
 }
 
 a:hover {
-    font-weight: 800;
-
-    border-bottom: 3px solid #FE7005;
+    font-weight: bold;
+    border-bottom: 4px solid #FE7005;
     transition: 0.3s;
 }
 
@@ -55,7 +55,7 @@ a:hover {
     background-color: #FE7005;
     color: #fff;
     font-family: "Cairo", sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     border: none;
     border-radius: 8px;
@@ -67,10 +67,10 @@ a:hover {
     transition: 0.3s;
 }
 
-#btn-header:active {
+#btn-header:hover {
     background-color: #fff;
     color: #FE7005;
-    transition: 0.3s;
+    border: 2px solid #FE7005;
 }
 
 
