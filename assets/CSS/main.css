@@ -7,6 +7,9 @@
     --color-purple: #5C2FCA;
     --color-green: #1E864B;
     --color-orange:#FE7005;
+    --color-white: #fff;
+    --font-texto: 'Inter', sans-serif;
+    --font-titulo: 'Cairo', sans-serif;
 }
 
 
@@ -72,9 +75,9 @@ a:hover {
 }
 
 #btn-header:hover {
-    background-color: #fff;
-    color: #FE7005;
-    border: 2px solid #FE7005;
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    border: 2px solid var(--color-orange);
 }
 
 .container {
@@ -119,29 +122,29 @@ a:hover {
 
 .texto-container {
     text-align: justify;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-texto);
     margin-top: 20px;
 }
 
 .texto-container p {
     font-weight: 400;
     font-size: 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-texto);
 }
 
 #subtitulo {
-    color: #5C2FCA;
+    color: var(--color-purple);
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     font-size: 36px;
-    font-family: 'Cairo', sans-serif;
+    font-family: var(--font-titulo);
 
 }
 
 #img-container {
     min-width: 25vw;
     width: 100%;
-    border-radius: 50px;
+    border-radius: 55px;
 
 
 }
@@ -149,89 +152,93 @@ a:hover {
 #btn-saiba-mais {
     padding: 0.625rem 1rem;
     border-radius: 8px;
-    background-color: #FE7005;
+    background-color: var(--color-orange);
     border: none;
-    color: #fff;
-    font-family: 'Inter', sans-serif;
+    color: var(--color-white);
+    font-family: var(--font-titulo);
     font-weight: 700;
     float: right;
     font-size: 20px;
-    border: 1px solid #FE7005;
-    transition: 0.3s;
+    border: 2px solid var(--color-orange);
 }
 
-#btn-saiba-mais:active {
-    background-color: #fff;
-    color: #FE7005;
-    transition: 0.3s;
+#btn-saiba-mais:hover {
+    background-color: var(--color-white);
+    color: var(--color-orange);
+    border: 2px solid var(--color-orange);
 }
 
 .container-impacto {
     width: 100%;
-    height: 400px;
+    min-height: 500px; /* ou outra altura adequada */
     background-image: url("../img/impacto.png");
     background-size: cover;
-    margin: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    justify-items: center;
-    height: 500px;
-
 }
 
 .titulo-impacto {
-    color: #ffffff;
+    color: var(--color-white);
     font-family: 'Cairo', sans-serif;
     text-align: center;
     font-weight: 800;
     font-size: 64px;
     position: relative;
     display: inline-block;
+    margin-top: 6vh;
 }
 
-.titulo-impacto::before {
+.titulo-impacto::after {
     position: absolute;
     content: '';
     height: 6px;
-    width: 100%;
+    width: 100%; 
     background: var(--linear-gradient);
     bottom: -8px;
     border-radius: 15px;
-    left: 0;
+    left: 0; 
 }
 
 .container-dados {
     display: flex;
     flex-direction: row;
-    color: #ffffff;
-    font-size: 15px;
-    font-family: "inter";
+    color: var(--color-white);
+    font-size: 24px;
+    font-family: var(--font-texto);
     justify-content: space-around;
     margin: 10%;
     width: 100%;
-
+    max-width: 1500px;
 }
 
 .dados {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    width: 20%;
+    width: 15%;
     
 }
 
 .titulo-dados {
     color: #4897D4;
     font-size: 64px;
-    font-family: "cairo";
+    font-family: var(--font-titulo);
     font-weight: 800;
-
+    
+    
 }
 
 .container-dados p {
     color: #ffffff;
     font-size: 24px;
-    font-family: "cairo";
+    font-family: var(--font-texto);
     text-align: center;
 }
 
@@ -271,7 +278,7 @@ a:hover {
     text-align: center;
     margin: 0;
     font-weight: 400;
-    width: 70%;
+    width: 60%;
 }
 
 .titulo-produto {

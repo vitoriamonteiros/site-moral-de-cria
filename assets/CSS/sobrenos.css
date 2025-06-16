@@ -7,6 +7,9 @@
     --color-purple: #5C2FCA;
     --color-green: #1E864B;
     --color-orange:#FE7005;
+    --color-white: #fff;
+    --font-texto: 'Inter', sans-serif;
+    --font-titulo: 'Cairo', sans-serif;
 }
 
 * {
