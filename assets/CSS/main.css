@@ -13,13 +13,13 @@
 }
 
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}  */
 
-header {
+/* header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +78,12 @@ a:hover {
     background-color: var(--color-white);
     color: var(--color-orange);
     border: 2px solid var(--color-orange);
-}
+} */
+
+
+
+
+
 
 .container {
     display: flex;
@@ -600,7 +605,10 @@ a:hover {
     border-radius: 15px;
 }
 
-footer {
+
+
+/* FOOTER */
+/* footer {
     background-color: #0e0e0e;
 
 }
@@ -688,4 +696,4 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
-} 
+}  */

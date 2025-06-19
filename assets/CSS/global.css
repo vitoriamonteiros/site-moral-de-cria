@@ -11,39 +11,15 @@
   --font-titulo: 'Cairo', sans-serif;
 }
 
-
-html, body {
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
-  
-}
-
-/*conteúdo fique visível abaixo do header */
-main {
-  padding-top: 100px; /* deve ser maior ou igual à altura do header */
-}
+  box-sizing: border-box;
+} 
 
 /* NAV */
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 9999;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5rem;
-}
-
-/* header {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,8 +29,8 @@ header {
   z-index: 3;
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  height: 80px ;
-} */
+  height:80px ;
+}
 
 nav a {
   text-decoration: none;
@@ -66,7 +42,6 @@ a {
   font-family: "Cairo", sans-serif;
   font-size: 18px;
   margin: 1.8rem;
-  transition: 0.3s;
 }
 
 a:hover {
@@ -86,14 +61,15 @@ a:hover {
   background-color: #FE7005;
   color: #fff;
   font-family: "Cairo", sans-serif;
-  text-decoration: none;
   font-size: 18px;
+  font-weight: 600;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   height: 2.5rem;
-  padding: 0 1.8rem;
-  border: 2px solid #FE7005;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  border: 1px solid #FE7005;
   transition: 0.3s;
 }
 
@@ -104,9 +80,7 @@ a:hover {
 }
 
 
-
 /* FOOTER */
-
 footer {
   background-color: #0e0e0e;
 
@@ -130,7 +104,7 @@ footer {
   color: #ffffff;
   font-weight: 400;
   font-size: 20px;
-  font-family: "Cairo", sans-serif;
+  font-family: Cairo;
   margin-top: 20px;
 }
 
@@ -195,4 +169,4 @@ footer {
   justify-content: center;
   align-items: center;
   padding-bottom: 15px;
-}
+} 

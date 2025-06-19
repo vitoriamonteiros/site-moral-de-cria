@@ -13,7 +13,7 @@
 }
 
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -80,7 +80,7 @@ a:hover {
     background-color: #fff;
     color: #FE7005;
     border: 2px solid #FE7005;
-}
+} */
 
 .img-sustentabilidade {
     display: flex;
@@ -324,7 +324,9 @@ a:hover {
     
 }
 
-footer {
+
+
+/* footer {
     background-color: #0e0e0e;
     margin-top: 3%;
 
@@ -413,4 +415,4 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
-}
+} */

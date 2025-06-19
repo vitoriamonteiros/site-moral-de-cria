@@ -13,13 +13,13 @@
 }
 
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-header {
+/* header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,36 +30,36 @@ header {
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     height: 80px;
-}
+} */
 
 
-nav a {
+/* nav a {
     text-decoration: none;
     color: #191919;
     font-weight: 500;
-}
+} */
 
-a {
+/* a {
     font-family: "Cairo", sans-serif;
     font-size: 18px;
     margin: 1.8rem;
     transition: 0.3s;
-}
+} */
 
-a:hover {
+/* a:hover {
     font-weight: bold;
     border-bottom: 4px solid #FE7005;
     transition: 0.3s;
-}
-
+} */
+/* 
 #logo {
     height: 6.25rem;
     width: auto;
     padding-left: 5rem;
     padding-right: 6.25rem;
-}
+} */
 
-#btn-header {
+/* #btn-header {
     background-color: #FE7005;
     color: #fff;
     font-family: "Cairo", sans-serif;
@@ -74,13 +74,16 @@ a:hover {
     border: 1px solid #FE7005;
     transition: 0.3s;
 
-}
+} */
 
-#btn-header:hover {
+/* #btn-header:hover {
     background-color: #fff;
     color: #FE7005;
     border: 2px solid #FE7005;
-}
+} */
+
+
+
 
 .img-esporte-cultura {
     display: flex;
@@ -325,7 +328,10 @@ a:hover {
     margin: 0 auto; 
 }
 
-footer {
+
+
+
+/* footer {
     background-color: #0e0e0e;
     margin-top: 3%;
 }
@@ -411,4 +417,4 @@ footer {
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
-}
+} */
