@@ -12,105 +12,13 @@
     --font-titulo: 'Cairo', sans-serif;
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 5rem;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    height:80px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #191919;
-    font-weight: 500;
-}
-
-a {
-    font-family: "Cairo", sans-serif;
-    font-size: 18px;
-    margin: 1.8rem;
-    transition: 0.3s;
-}
-
-a:hover {
-    font-weight: bold;
-    border-bottom: 4px solid #FE7005;
-    transition: 0.3s;
-}
-
-.logo {
-    height: 6.25rem;
-    width: auto;
-    padding-left: 5rem;
-    padding-right: 6.25rem;
-}
-
-#btn-header {
-    background-color: #FE7005;
-    color: #fff;
-    font-family: "Cairo", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    height: 2.5rem;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-    border: 1px solid #FE7005;
-    transition: 0.3s;
-}
-
-#btn-header:hover {
-    background-color: #fff;
-    color: #FE7005;
-    border: 2px solid #FE7005;
-} */
-
-
-.img-sobreNos{
-    display: flex;
+/* banner pagina */
+.page-img {
     background-image: url(../img/sobre-nos.png);
-    width: 100%;
-    height: 350px;
-    background-size: cover;
-    margin: none;
-    justify-content: center;
-    justify-items: center;
-    
 }
 
-.img-sobreNos h1 {
-    color: #ffffff;
-    font-family: 'Cairo', sans-serif;
-    text-align: center;
-    font-weight: 800;
-    font-size: 64px;
-    position: relative;
-    margin-top: 2.5em;
-}
 
-.sobreNos::before{
-    position: absolute;
-    content: '';
-    height: 6px;
-    width: 290px;
-    background: var(--linear-gradient);
-    margin-top: 1.3em;
-    border-radius: 15px;
-}
 
 .titulo-sobreNos{
     font-family: 'Cairo', sans-serif;
@@ -139,44 +47,18 @@ a:hover {
     text-align: center;
 }
 
+
+
+
 .container-missao {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+    margin-top: 5rem;
 }
 
-.box-titulo {
-    display: flex;
-    width: 100%;
-    height: 380px;
-    background-size: cover;
-    margin: none;
-    justify-content: center;
-    justify-items: center;
-    
+.container-missao h1{
+    margin: 0 auto 8rem auto;
 }
-
-.box-titulo h1 {
-    color: #FE7005;
-    font-family: 'Cairo', sans-serif;
-    text-align: center;
-    font-weight: 800;
-    font-size: 64px;
-    position: relative;
-    margin-top: 1.2em;
-    ;
-}
-
-.titulo-missao::before{
-    position: absolute;
-    content: '';
-    height: 6px;
-    width: 650px;
-    background: var(--linear-gradient);
-    margin-top: 1.3em;
-    border-radius: 15px;
-}
-
 
 .caixas-missao{
     display: flex;
@@ -186,9 +68,7 @@ a:hover {
     height: 293px;
     align-items: center;
     background-color: #d9d9d9;
-    position: relative;
-   
-    
+    position: relative;  
 }
 
 .caixas-missao h2{
@@ -197,9 +77,7 @@ a:hover {
     font-size: 48px;
     font-weight: 700;
     color: #ffffff;
-    margin-top: auto;
-
-   
+    margin-top: auto;  
 }
 
 .caixas-missao p {
@@ -230,14 +108,14 @@ a:hover {
     border-radius: 15%;
     text-align: center;
     position: relative;
-    margin-top: -15em;
+    /* margin-top: -15em; */
     border-bottom-style: solid;
     border-bottom-width: 1vh;
     border-bottom-color: #FE7005;
     border-right-style: solid;
     border-right-width: 1vh;
     border-right-color: #FE7005;
-    
+
 }
 
 #visao{
@@ -247,13 +125,14 @@ a:hover {
     border-radius: 15%;
     text-align: center;
     position: relative;
-    margin-top: -15em;
+    /* margin-top: -15em; */
     border-bottom-style: solid;
     border-bottom-width: 1vh;
     border-bottom-color: #FE7005;
     border-right-style: solid;
     border-right-width: 1vh;
     border-right-color: #FE7005;
+
 
 }
 
@@ -264,7 +143,7 @@ a:hover {
     border-radius: 15%;
     text-align: center;
     position: relative;
-    margin-top: -15em;
+    /* margin-top: -15em; */
     border-bottom-style: solid;
     border-bottom-width: 1vh;
     border-bottom-color: #FE7005;
@@ -272,27 +151,15 @@ a:hover {
     border-right-width: 1vh;
     border-right-color: #FE7005;
 
+
 }
 
-.titulo-equipe{
-    color: #FE7005;
-    font-family: 'Cairo', sans-serif;
+
+
+
+#nossa-equipe {
     text-align: center;
-    font-weight: 800;
-    font-size: 64px;
-    position: relative;
-    margin-top: 2.0em;
-    margin-bottom: 50px;
-}
-
-.titulo-equipe::before{
-    position: absolute;
-    content: '';
-    height: 6px;
-    width: 380px;
-    background: var(--linear-gradient);
-    margin-top: 1.3em;
-    border-radius: 15px;
+    padding: 5rem 2rem;
 }
 
 #equipe-container {
@@ -303,8 +170,7 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.membro {
-    
+.membro { 
     width: 282px;
     height: 551px;
     background-image: url('../img/maos.png');
@@ -439,96 +305,3 @@ a:hover {
     display: flex;
 }
 
-
-
-
-
-/* footer {
-    background-color: #0e0e0e;
-    margin-top: 10%;
-
-}
-
-.footer-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #4897D4;
-}
-
-.footer-logo img {
-    width: 175px;
-}
-
-.footer-logo p {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 20px;
-    font-family: Cairo;
-    margin-top: 20px;
-}
-
-.redes-sociais .nav-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.redes-sociais .nav-bar a {
-    text-decoration: none;
-    color:#ffffff;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.redes-sociais {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.redes-sociais .redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: #ffffff;
-    width: 35%;
-    font-weight: 400;
-    padding-bottom: 30px;
-    
-}
-
-.redes-sociais .redes p {
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.redes-container a {
-    color: white;
-    padding: 0;
-    margin: 5px;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.direitos {
-    background-color: rgb(25, 25, 25, 0.95);
-    color: #ffffff;
-    text-align: center;
-    padding: 30px;
-    font-size: 16px;
-    font-weight: 400;
-    height: 67px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 15px;
-} */

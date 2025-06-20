@@ -12,6 +12,10 @@
     --font-titulo: 'Cairo', sans-serif;
 }
 
+/* banner pagina */
+.page-img{
+    background-image: url(../img/projetos.png);
+}
 
 /* * {
     margin: 0;

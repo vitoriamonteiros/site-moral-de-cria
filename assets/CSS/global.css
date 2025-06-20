@@ -17,8 +17,16 @@
   box-sizing: border-box;
 } 
 
-/* NAV */
+a {
+  font-family: "Cairo", sans-serif;
+  font-size: 18px;
+  margin: 1.8rem;
+}
 
+
+
+
+/* NAV */
 header {
   display: flex;
   align-items: center;
@@ -36,18 +44,14 @@ nav a {
   text-decoration: none;
   color: #191919;
   font-weight: 500;
-}
-
-a {
   font-family: "Cairo", sans-serif;
   font-size: 18px;
   margin: 1.8rem;
 }
 
-a:hover {
+nav a:hover {
   font-weight: bold;
   border-bottom: 4px solid #FE7005;
-  transition: 0.3s;
 }
 
 .logo {
@@ -78,6 +82,73 @@ a:hover {
   color: #FE7005;
   border: 2px solid #FE7005;
 }
+
+
+/* BANNER DAS PAGINAS */
+.page-img {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  margin: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-img h1 {
+  color: #ffffff;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 64px;
+  position: relative;
+  margin-top: 7%;
+  display: inline-block; 
+  /* padding-bottom: 0.1em;  */
+  margin: 0; 
+}
+
+.page-img h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 6px;
+  width: 100%;
+  /* max-width: 300px; */
+  background: var(--linear-gradient);
+  border-radius: 15px;
+}
+
+
+/* TITULOS DAS SESSOES */
+.titulos {
+  font-family: 'Cairo', sans-serif ;
+  font-weight: 800;
+  color: var(--color-orange) ;
+  text-align: center ;
+  position: relative ;
+  font-size: 64px ;
+  margin-bottom: 30px ;
+  display: inline-block ;
+  margin-top: 2%;
+}
+
+.titulos::after {
+  position: absolute;
+  content: '';
+  height: 6px;
+  width: 100%; 
+  background: var(--linear-gradient);
+  bottom: -8px;
+  border-radius: 15px;
+  left: 0; 
+}
+
 
 
 /* FOOTER */
@@ -113,13 +184,12 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
 }
 
 .redes-sociais .nav-bar a {
   text-decoration: none;
   color:#ffffff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
 }
 
@@ -155,6 +225,7 @@ footer {
   margin: 5px;
   font-size: 24px;
   font-weight: 400;
+  
 }
 
 .direitos {

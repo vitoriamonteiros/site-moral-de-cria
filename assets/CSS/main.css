@@ -12,79 +12,6 @@
     --font-titulo: 'Cairo', sans-serif;
 }
 
-
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}  */
-
-/* header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 5rem;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    height: 80px ;
-}
-
-
-nav a {
-    text-decoration: none;
-    color: #191919;
-    font-weight: 500;
-}
-
-a {
-    font-family: "Cairo", sans-serif;
-    font-size: 18px;
-    margin: 1.8rem;
-    transition: 0.3s;
-}
-
-a:hover {
-    font-weight: bold;
-    border-bottom: 4px solid var(--color-orange);
-    transition: 0.3s;
-}
-
-.logo {
-    height: 6.25rem;
-    width: auto;
-    padding-left: 5rem;
-    padding-right: 6.25rem;
-}
-
-#btn-header {
-    background-color: #FE7005;
-    color: #fff;
-    font-family: "Cairo", sans-serif;
-    text-decoration: none;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    height: 2.5rem;
-    padding: 0 1.8rem;
-    border: 2px solid #FE7005;
-    transition: 0.3s;
-}
-
-#btn-header:hover {
-    background-color: var(--color-white);
-    color: var(--color-orange);
-    border: 2px solid var(--color-orange);
-} */
-
-
-
-
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -101,28 +28,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     gap: 20px;
-}
-
-.titulo-container {
-    font-family: 'Cairo', sans-serif;
-    font-weight: 800;
-    color: var(--color-orange);
-    text-align: center;
-    position: relative;
-    font-size: 64px;
-    margin-bottom: 30px;
-    display: inline-block;
-}
-
-.titulo-container::after {
-    position: absolute;
-    content: '';
-    height: 6px;
-    width: 100%; 
-    background: var(--linear-gradient);
-    bottom: -8px;
-    border-radius: 15px;
-    left: 0; 
 }
 
 .texto-container {
@@ -247,27 +152,6 @@ a:hover {
     text-align: center;
 }
 
-.container-loja h1 {
-    font-family: 'Cairo', sans-serif;
-    font-weight: 800;
-    color: #FE7005;
-    text-align: center;
-    margin: 2%;
-    font-size: 55px;
-    position: relative;
-    display: inline-block;
-}
-
-.container-loja h1::after{
-    position: absolute;
-    content: '';
-    height: 6px;
-    width: 100%;
-    background: var(--linear-gradient);
-    bottom: -8px;
-    border-radius: 15px;
-    left: 0;
-}
 
 .titulo-loja {
     display: flex;
@@ -378,33 +262,12 @@ a:hover {
     margin: auto;
 }
 
-.titulo-projetos {
-    font-family: 'Cairo', sans-serif;
-    font-weight: 800;
-    color: var(--color-orange);
-    text-align: center;
-    margin: 2%;
-    font-size: 64px;
-    position: relative;
-    display: inline-block;
-}
 
 #titulo-projetos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.titulo-projetos::before {
-    position: absolute;
-    content: '';
-    height: 6px;
-    width: 100%;
-    background: var(--linear-gradient);
-    bottom: -8px;
-    border-radius: 15px;
-    left: 0;
 }
 
 .text-projetos {
@@ -458,11 +321,12 @@ a:hover {
     text-align: center;
 }
 
+/* 
 .nos-acompanhe h1 {
     font-family: 'Cairo', sans-serif;
     font-weight: 800;
     color: #FE7005;
-    /* text-align: center; */
+    /* text-align: center; 
     margin: 2%;
     font-size: 64px;
     position: relative;
@@ -480,6 +344,7 @@ a:hover {
     border-radius: 15px;
     left: 0;
 }
+ */
 
 .moral-2 {
     height: 497px;
@@ -606,94 +471,3 @@ a:hover {
 }
 
 
-
-/* FOOTER */
-/* footer {
-    background-color: #0e0e0e;
-
-}
-
-.footer-logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #4897D4;
-}
-
-.footer-logo img {
-    width: 175px;
-}
-
-.footer-logo p {
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 20px;
-    font-family: Cairo;
-    margin-top: 20px;
-}
-
-.redes-sociais .nav-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.redes-sociais .nav-bar a {
-    text-decoration: none;
-    color:#ffffff;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.redes-sociais {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.redes-sociais .redes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    color: #ffffff;
-    width: 35%;
-    font-weight: 400;
-    padding-bottom: 30px;
-
-}
-
-.redes-sociais .redes p {
-    padding: 0;
-    margin: 0;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.redes-container a {
-    color: white;
-    padding: 0;
-    margin: 5px;
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.direitos {
-    background-color: rgb(25, 25, 25, 0.95);
-    color: #ffffff;
-    text-align: center;
-    padding: 30px;
-    font-size: 16px;
-    font-weight: 400;
-    height: 67px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 15px;
-}  */

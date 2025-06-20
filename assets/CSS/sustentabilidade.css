@@ -82,7 +82,7 @@ a:hover {
     border: 2px solid #FE7005;
 } */
 
-.img-sustentabilidade {
+/* .img-sustentabilidade {
     display: flex;
     background-image: url(../img/sustentabilidade-e-cidadania.png);
     width: 100%;
@@ -117,6 +117,12 @@ a:hover {
     border-radius: 15px;
     
     
+} */
+
+
+/* banner pagina */
+.page-img{
+    background-image: url(../img/sustentabilidade-e-cidadania.png);
 }
 
 .img-projetos {
