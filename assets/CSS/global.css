@@ -6,7 +6,9 @@
   --color-purple: #5C2FCA;
   --color-green: #1E864B;
   --color-orange:#FE7005;
+  --color-clean: #F9F9F9;
   --color-white: #fff;
+  --color-black: #000;
   --font-texto: 'Inter', sans-serif;
   --font-titulo: 'Cairo', sans-serif;
 }
@@ -17,14 +19,25 @@
   box-sizing: border-box;
 } 
 
+/* body{
+  background-color: #6c0505;
+} */
+
 a {
   font-family: "Cairo", sans-serif;
   font-size: 18px;
   margin: 1.8rem;
 }
 
+p{
+  font-family: var(--color-black);
+  font-size: 20px;
+}
 
-
+.link {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* NAV */
 header {
@@ -149,7 +162,14 @@ nav a:hover {
   left: 0; 
 }
 
-
+/* TEXTO DAS SESSOES */
+.texto {
+  color: var(--color-black);
+  font-size: 20px;
+  font-family: var(--font-texto);
+  text-align: center;
+  width: 80%;
+}
 
 /* FOOTER */
 footer {

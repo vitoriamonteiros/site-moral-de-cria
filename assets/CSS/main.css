@@ -7,10 +7,13 @@
     --color-purple: #5C2FCA;
     --color-green: #1E864B;
     --color-orange:#FE7005;
+    --color-clean: #F9F9F9;
     --color-white: #fff;
+    --color-black: #000;
     --font-texto: 'Inter', sans-serif;
     --font-titulo: 'Cairo', sans-serif;
 }
+
 
 .container {
     display: flex;
@@ -54,7 +57,7 @@
 #img-container {
     min-width: 25vw;
     width: 100%;
-    border-radius: 55px;
+    /* border-radius: 55px; */
 
 
 }
@@ -78,6 +81,8 @@
     border: 2px solid var(--color-orange);
 }
 
+
+/* SESSAO IMPACTO */
 .container-impacto {
     width: 100%;
     min-height: 500px; /* ou outra altura adequada */
@@ -152,22 +157,12 @@
     text-align: center;
 }
 
-
+/* SESSAO LOJA */
 .titulo-loja {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
-}
-
-.texto-loja {
-    color: black;
-    font-size: 20px;
-    font-family: 'inter', sans-serif;
-    text-align: center;
-    margin: 0;
-    font-weight: 400;
-    width: 60%;
 }
 
 .titulo-produto {
@@ -210,141 +205,122 @@
     color: #FE7005;
 }
 
+.camiseta {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    margin-bottom: 0;
+    /* justify-content: end; */
+}
+
 .img-camiseta {
     width: 500px;
     align-items: center;
     text-align: center;
-    margin: 13%;
+    margin: 10%;
     z-index: 2;
+}
+
+.caneca {
+     display: flex;
+     width: 100%;
+     height: 600px;
+     align-items: center;
+     /* justify-content: space-between; */
+     justify-content: end;
+     background-color: #d9d9d9;
+     clip-path: polygon(0 25%, 100% 0%, 100% 100%, 0% 100%);
+     padding: 3rem 5%;
+     /* margin-top: -50px; para encostar na camiseta */
+     position: relative;
+     /* z-index: 1; */
 }
 
 .img-caneca {
     display: flex;
     width: 500px;
     margin: 10%;
-    padding-bottom:230px;
-}
-
-.camiseta {
-    display: flex;
-    width: 100%;
-    height: 400px;
+    /* padding-bottom:230px; */
+    z-index: 2;
     align-items: center;
-    margin-bottom: 0;
-
+    text-align: center;
 }
 
-.wave {
-    padding: 0;
-    margin: 0;
-    background-color: #D9D9D9;
-    
-}
-.caneca {
-    display: flex;
-    width: 100%;
-    height: 400px;
-    align-items: center;
-    justify-content: end;
-    background-color: #D9D9D9;
 
-    
-
-}
-
+/* SESSAO PROJETOS */
 .container-projetos {
-    display: flex;
-    width: 100%;
-    /* background-color: #F9F9F9; */
-    align-items: center;
-    justify-items: center;
-    justify-content: space-around;
-    margin: auto;
-}
-
-
-#titulo-projetos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-.text-projetos {
-    color: black;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
     text-align: center;
-    font-weight: 400;
-    width: 80%;
+    padding: 40px 0;
 }
 
-.container-projetos {
-    width: 75%;
-    margin-bottom: 200px;
+.projetos {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    flex-wrap: wrap;
+    margin-top: 28px;
+    gap: 18px;
 }
 
-.container-projetos img {
-    width: 300px;
-    height: 200px;
-    opacity: 70%;
-    border-radius: 5%;
+.projetos * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.projetos img {
+    display: block;
 }
 
 .sustentabilidade {
     text-align: center;
     background-color: #1e864b;
-    border-radius: 5%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    /* width: 384px; */
 }
 
 .profissional {
     text-align: center;
     background-color: #5c2fca;
-    border-radius: 5%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    /* width: 384px; */
 }
 
-.cultura {
+.esporte {
     text-align: center;
     background-color: #4897D4;
-    border-radius: 5%;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    /* width: 384px; */
 }
 
-.legenda {
-    color: #F9F9F9;
-    font-size: 20px;
-    font-family: '' "cairo";
+.projeto-titulo {
+    color: var(--color-white);
+    font-size: 28px;
+    font-family: var(--font-titulo);
+    font-weight: bold;
+    padding: 15px 0; 
+    margin-top: auto;
 }
 
+/* SESSAO NOS ACOMPANHE */
 .nos-acompanhe {
     margin-top: 50px;
     position: relative;
     text-align: center;
 }
-
-/* 
-.nos-acompanhe h1 {
-    font-family: 'Cairo', sans-serif;
-    font-weight: 800;
-    color: #FE7005;
-    /* text-align: center; 
-    margin: 2%;
-    font-size: 64px;
-    position: relative;
-    margin-bottom: 50px;
-    display: inline-block; 
-}
-
-.nos-acompanhe h1::after{
-    position: absolute;
-    content: '';
-    height: 6px;
-    width: 100%;
-    background: var(--linear-gradient);
-    bottom: -8px;
-    border-radius: 15px;
-    left: 0;
-}
- */
 
 .moral-2 {
     height: 497px;
