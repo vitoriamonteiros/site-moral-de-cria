@@ -14,7 +14,7 @@
     --font-titulo: 'Cairo', sans-serif;
 }
 
-
+/* SESSAO O QUE É O MORAL DE CRIA */
 .container {
     display: flex;
     flex-direction: column;
@@ -39,37 +39,40 @@
     margin-top: 20px;
 }
 
-.texto-container p {
-    font-weight: 400;
-    font-size: 20px;
-    font-family: var(--font-texto);
-}
-
 #subtitulo {
     color: var(--color-purple);
     font-weight: 700;
     margin-bottom: 24px;
     font-size: 36px;
     font-family: var(--font-titulo);
-
 }
 
 #img-container {
-    min-width: 25vw;
     width: 100%;
-    /* border-radius: 55px; */
+    max-width: 500px;
+    height: auto;
+}
 
+.imagem {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.texto-container {
+    flex: 1.6;
+    margin-top: 20px;
 }
 
 #btn-saiba-mais {
-    padding: 0.625rem 1rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 8px;
     background-color: var(--color-orange);
     border: none;
     color: var(--color-white);
     font-family: var(--font-titulo);
-    font-weight: 700;
+    font-weight: bold;
     float: right;
     font-size: 20px;
     border: 2px solid var(--color-orange);
@@ -80,7 +83,6 @@
     color: var(--color-orange);
     border: 2px solid var(--color-orange);
 }
-
 
 /* SESSAO IMPACTO */
 .container-impacto {
@@ -311,13 +313,13 @@
     font-size: 28px;
     font-family: var(--font-titulo);
     font-weight: bold;
-    padding: 15px 0; 
+    padding: 35px 0; 
     margin-top: auto;
 }
 
 /* SESSAO NOS ACOMPANHE */
 .nos-acompanhe {
-    margin-top: 50px;
+    margin-top: 90px;
     position: relative;
     text-align: center;
 }
@@ -335,39 +337,43 @@
 }
 
 .moral-2 a {
-    background-color: #ffffff;
-    padding: 0px 10px 10px 120px;
-    width: 384px;
-    height: 58px;
+    background-color: var(--color-white);
+    padding: 0px 20px 10px 120px;
     border-radius: 15px;
     text-decoration: none;
-    color: black;
+    color: var(--color-black);
     font-weight: 800;
-    font-size: 35px;
+    font-size: 40px;
     display: flex;
+    align-items: center;
+    height: auto;
+    width: fit-content;
 }
 
 .icone {
-
     width: 100px;
     position: absolute;
-    top: -10px;
 }
 
 .moral2-insta {
-    translate: 0px -14px;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    margin-top: -20px;
 }
 
 .container-img {
     display: flex;
     width: 100%;
     flex-direction: row;
-    background-color: #4897D4;
+    background-color: var(--color-blue);
     align-items: center;
     justify-items: center;
-    justify-content: space-around;
     padding-left: 120px;
     padding-right: 120px;
+    justify-content: center;
+    gap: 20px;                 
+    padding: 0 40px;
 }
 
 .moral2-img img {
@@ -396,54 +402,37 @@
     display: flex;
     width: 100%;
     flex-direction: row;
-    background-color: #5C2FCA;
+    background-color: var(--color-purple);
     align-items: center;
     justify-items: center;
-    justify-content: space-around;
     padding-left: 120px;
     padding-right: 120px;
-
+    justify-content: center;
+    gap: 20px;                 
+    padding: 0 40px;
 }
 
 .casa-insta {
     display: flex;
-    justify-content: right;
-    translate: -70px -15px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 100px;
+    margin-top: -20px;
+    position: relative;
 }
 
 .casa-insta a {
-    background-color: #ffffff;
-    padding: 0px 10px 10px 25px;
-    width: 720px;
-    height: 58px;
+    background-color: var(--color-white);
+    padding: 0px 120px 10px 20px;
     border-radius: 15px;
     text-decoration: none;
-    color: black;
+    color: var(--color-black);
     font-weight: 800;
-    font-size: 35px;
+    font-size: 40px;
     display: flex;
+    align-items: center;
+    height: auto;
+    width: fit-content;
 
 }
-
-.parceiros h1 {
-    font-family: 'Cairo', sans-serif;
-    font-weight: 800;
-    color: #FE7005;
-    text-align: center;
-    margin: 2%;
-    font-size: 64px;
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.parceiros h1::before {
-    position: absolute;
-    content: '';
-    height: 6px;
-    width: 255px;
-    background: var(--linear-gradient);
-    bottom: -8px;
-    border-radius: 15px;
-}
-
 
