@@ -93,6 +93,36 @@ nav a:hover {
   border: 2px solid #FE7005;
 }
 
+.hamburguer,
+.close-menu {
+  display: none;
+}
+
+.hamburguer {
+  font-size: 36px;
+  background: none;
+  border: none;
+  font-weight: bolder;
+  color: var(--color-orange);
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.close-menu {
+  font-size: 50px;
+  background: none;
+  border: none;
+  font-weight: bolder;
+  color: var(--color-orange);
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.logo-menu {
+  display: none;
+}
 
 /* BANNER DAS PAGINAS */
 .page-img {
@@ -279,4 +309,89 @@ footer {
 
 .creditos a:hover {
   color: var(--color-orange);
+}
+
+
+/* TABLET */
+@media (max-width: 1300px) {
+  header {
+    padding-right: 2rem;
+  }
+
+  .logo {
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+    height: 5rem;
+  }
+
+  nav a {
+    margin: 1rem;
+    font-size: 18px;
+  }
+
+  #btn-header {
+    font-size: 18px;
+    padding: 0.3rem 1.2rem;
+  }
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    overflow-y: auto;
+    align-items: center;
+  }
+
+  nav.show {
+    right: 0;
+  }
+
+  .logo-menu {
+    display: block;
+    width: 120px;
+    margin: 0 auto 0.5rem;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 48px;
+    background: none;
+    border: none;
+    color: var(--color-orange);
+    cursor: pointer;
+  }
+  .hamburguer {
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+
+  nav a {
+    font-size: 24px;
+    text-align: center;
+    margin: 0.2rem 0;
+    text-decoration: none;
+  }
+
+  /*  */
+
+
 }
