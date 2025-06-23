@@ -283,28 +283,26 @@ footer {
   color: var(--color-white);
   font-family: var(--font-titulo);
   text-align: center;
-  padding: 30px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 15px;
+  padding: 15px 20px;
 } 
 
 .direitos p{
   font-size: 16px;
+  margin: 0;
+  line-height: 1.4;
 }
 
 .creditos {
   font-size: 13px;
   color: transparent;
   transition: color 0.3s ease;
+  margin-top: 6px; 
 }
 
 .creditos a {
   color: #6a6a6a;
   font-size: 16px;
-  text-decoration: none;;
+  text-decoration: none;
 }
 
 .creditos a:hover {
@@ -391,7 +389,63 @@ footer {
     text-decoration: none;
   }
 
-  /*  */
+  /* FOOTER */
+  .footer-logo img {
+    width: 90px;
+  }
 
+  .footer-logo p {
+    padding: 1px 20px; 
+    text-align: center;
+    font-size: 16px;
+    width: 90%;
+  }
 
+  .redes-sociais .nav-bar {
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 0;
+  }
+
+  .redes-sociais .nav-bar a {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .redes-sociais .redes {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0 30px 0;
+  }
+
+  .redes-sociais .redes p {
+    font-size: 20px;
+  }
+
+  .redes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .redes-container a {
+    font-size: 22px;
+  }
+
+  .direitos p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .creditos a {
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+  }
+
+  
 }
