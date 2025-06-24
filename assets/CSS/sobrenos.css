@@ -307,3 +307,14 @@
     display: flex;
 }
 
+
+    /* ----TABLET---- */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+
+}    
+         
+    /* ----MOBILE---- */
+@media screen and (max-width: 1024px) {
+           
+}
+    

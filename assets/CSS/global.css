@@ -19,10 +19,6 @@
   box-sizing: border-box;
 } 
 
-/* body{
-  background-color: #6c0505;
-} */
-
 a {
   font-family: "Cairo", sans-serif;
   font-size: 18px;
@@ -311,7 +307,7 @@ footer {
 
 
 /* TABLET */
-@media (max-width: 1300px) {
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
   header {
     padding-right: 2rem;
   }
@@ -336,6 +332,14 @@ footer {
 
 /* MOBILE */
 @media screen and (max-width: 1024px) {
+  a {
+    font-size: 16px;
+    margin: 0.8rem; 
+  }
+
+  p {
+    font-size: 16px;
+  }
 
   /* NAV */
   nav {
@@ -387,6 +391,22 @@ footer {
     text-align: center;
     margin: 0.2rem 0;
     text-decoration: none;
+  }
+
+  /* TITULOS DAS SESSOES */
+  .titulos {
+    font-size: 36px;
+    margin-top: 4%;
+    margin-bottom: 20px;
+  }
+
+  .texto {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .titulos::after {
+    height: 6px; 
   }
 
   /* FOOTER */
@@ -447,5 +467,5 @@ footer {
     margin-top: 5px;
   }
 
-  
+
 }

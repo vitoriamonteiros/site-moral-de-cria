@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 :root {
@@ -426,3 +425,262 @@
 
 }
 
+
+
+    /* ----TABLET---- */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+    /* impacto */
+    .dados {
+        width: 25%;
+    }
+
+    /* SESSAO LOJA */
+    .camiseta {
+        margin-bottom: 0.5rem;
+      }
+
+    .camiseta,
+    .caneca {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 2rem;
+        column-gap: 2rem; 
+        row-gap: 0;        
+    }
+
+    .btn-loja {
+        font-size: 18px;
+        padding: 0.4rem 1.2rem;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+    .img-camiseta,
+    .img-caneca {
+        width: 500px;
+        max-width: 90vw;
+        height: auto;
+        margin: 0;
+    }
+
+    .caneca {
+        clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0% 100%);
+    }
+ 
+    /* SESSAO NOS ACOMPANHE */
+    .moral-2{
+    margin-top: 50px;
+    }
+
+    .moral2-insta a {
+        font-size: 28px;
+        padding: 0 15px 8px 105px;
+    }
+    
+    .moral2-insta .icone {
+        width: 50px;
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+
+    .container-img {
+        gap: 5px;
+        padding: 0 20px;
+    }
+    
+    .casa-formacao .container-img {
+        gap: 10px;
+        padding: 0 50px;
+    }
+    
+}    
+     
+    /* ----MOBILE---- */
+@media screen and (max-width: 1024px) {
+    /* sessao o que é o moral */
+    .container {
+        margin-top: -50px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+      
+    #subtitulo {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .texto-container {
+        margin-bottom: -100px;
+    }
+    
+    #btn-saiba-mais {
+        display: none;
+    }
+
+    /* impacto */
+    .container-impacto {
+        background-position: center;
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+    
+    .titulo-impacto {
+        font-size: 36px;
+        margin-top: 1rem;
+    }
+    
+    .titulo-impacto::after {
+        height: 6px;
+    }
+    
+    .container-dados {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+    
+    .dados {
+        width: 40%;
+    }
+    
+    .titulo-dados {
+        font-size: 36px;
+    }
+    
+    .container-dados p {
+        font-size: 16px;
+    }
+    
+    /* SESSAO LOJA */
+    .container-produtos {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+    
+    .camiseta,
+    .caneca {
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem 1rem;
+    }
+    
+    .camiseta {
+        background-color: #fff;
+        margin-top: -50px;
+        
+    }
+    
+    .caneca {
+        background-color: #d9d9d9;
+        clip-path: polygon(0 7%, 100% 0%, 100% 100%, 0% 100%);
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 0.5rem;
+    }
+    
+    .img-camiseta,
+    .img-caneca {
+        width: 80%;
+        max-width: 500px;
+        margin: 0 auto 1rem auto;
+        order: -1; 
+    }
+    
+    .titulo-produto {
+        font-size: 18px;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    
+    .preço {
+        font-size: 36px;
+        margin-top: -2rem;
+        margin-bottom: -0.25rem;
+    }
+    
+    .btn-loja {
+        font-size: 18px;
+        padding: 0.5rem 1.5rem;
+    }
+
+    /* SESSAO PROJETOS */
+    .projeto-titulo {
+        font-size: 24px;
+        padding: 18px 0;
+    }
+    
+    /* SESSAO NOS ACOMPANHE */
+    .moral-2{
+        margin-top: 30px;
+    }
+
+    .moral2-img:nth-child(3),
+    .casa-formacao .container-img .moral2-img:nth-child(3) {
+        display: none; /* esconder a terceira imagem */
+    }
+
+    .container-img {
+        gap: 10px !important;
+        justify-content: center !important;
+        margin: auto;
+    }
+
+    .moral2-img img {
+        width: 100%;
+        max-width: 300px !important;
+        height: auto;
+    }
+
+    .moral2-insta .icone img,
+    .casa-insta .icone img {
+        width: 90px !important;
+        height: auto !important;
+    }
+
+    .moral2-insta {
+        margin-left: 10px !important;
+    }
+
+    .casa-insta {
+        margin-right: 10px !important;
+        margin-top: -30px;
+        
+    }
+
+    .moral2-insta a {
+        font-size: 22px !important;
+        padding: 0 15px 8px 80px !important;
+    }
+
+    .casa-insta a{
+        font-size: 22px !important;
+        padding: 0 24px 8px 8px !important;
+        margin-right: -28px !important;
+    }
+    
+    .moral-2,
+    .casa-formacao {
+        height: auto !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .casa-insta .icone {
+        position: static !important;
+        margin-top: 0 !important;
+    }
+    
+}

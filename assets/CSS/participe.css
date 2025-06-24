@@ -19,70 +19,15 @@
     background-image: url(../img/projetos.png);
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+
+    /* ----TABLET---- */
+@media screen and (min-width: 1025px) and (max-width: 1300px) {
+
+}    
+         
+    /* ----MOBILE---- */
+@media screen and (max-width: 1024px) {
+           
 }
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 5rem;
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    height: 80px ;
-}
-
-
-nav a {
-    text-decoration: none;
-    color: #191919;
-    font-weight: 500;
-}
-
-a {
-    font-family: "Cairo", sans-serif;
-    font-size: 18px;
-    margin: 1.8rem;
-    transition: 0.3s;
-}
-
-a:hover {
-    font-weight: bold;
-    border-bottom: 4px solid #FE7005;
-    transition: 0.3s;
-}
-
-.logo {
-    height: 6.25rem;
-    width: auto;
-    padding-left: 5rem;
-    padding-right: 6.25rem;
-}
-
-#btn-header {
-    background-color: #FE7005;
-    color: #fff;
-    font-family: "Cairo", sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    height: 2.5rem;
-    padding-left: 1.8rem;
-    padding-right: 1.8rem;
-    border: 1px solid #FE7005;
-    transition: 0.3s;
-}
-
-#btn-header:hover {
-    background-color: #fff;
-    color: #FE7005;
-    border: 2px solid #FE7005;
-} */
+    
