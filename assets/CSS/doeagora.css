@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+:root {
+  --linear-gradient: linear-gradient(90deg, #4897D4, #1E864B, #FE7005, #5C2FCA);
+  --color-blue: #4897D4;
+  --color-purple: #5C2FCA;
+  --color-green: #1E864B;
+  --color-orange:#FE7005;
+  --color-clean: #F9F9F9;
+  --color-white: #fff;
+  --color-black: #191919;
+  --font-texto: 'Inter', sans-serif;
+  --font-titulo: 'Cairo', sans-serif;
+}
+
+.titulos {
+  font-family: var(--font-titulo);
+  font-weight: 800;
+  color: var(--color-orange);
+  text-align: center;
+  position: relative;
+  font-size: 64px;
+  margin-bottom: 30px;
+  margin-top: 1%; 
+  display: inline-block;
+  line-height: 1.1;
+}
+
+.titulos::after {
+  position: absolute;
+  content: '';
+  height: 6px;
+  width: 100%;
+  background: var(--linear-gradient);
+  bottom: -10px; /* aumenta o espaço entre título e linha para alinhar melhor */
+  border-radius: 15px;
+  left: 0;
+}
+
+.container-doe {
+  max-width: 600px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  text-align: center;
+  font-family: var(--font-texto);
+}
+
+.pix-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.pix-qrcode {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.instrucao {
+  font-size: 14px;
+  color: var(--color-black);
+  max-width: 320px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+.pix-info {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+.label {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: var(--color-purple);
+}
+
+.chave-container {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--color-orange);
+  padding: 12px 16px;
+  border-radius: 12px;
+  user-select: all;
+  max-width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  word-break: break-word;
+  white-space: normal;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chave {
+  font-family: 'Courier New', Courier, monospace;
+  color: #585858;
+  font-size: 14px; 
+  flex: 1 1 auto;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  padding-right: 40px;
+}
+
+.btn-copiar {
+  position: absolute;
+  right: -10px; 
+  background-color: var(--color-orange);
+  border: none;
+  color: var(--color-white);
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.btn-copiar:hover {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+  border: 1px solid #FE7005;
+}
+
+.btn-copiar:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.info-extra {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--color-black);
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.instrucao-copy {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--color-black);
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1024px) {
+  .titulos {
+    font-size: 36px;
+    margin-top: 4%;
+    margin-bottom: 20px;
+  }
+
+  .titulos::after {
+    height: 6px; 
+  }
+}

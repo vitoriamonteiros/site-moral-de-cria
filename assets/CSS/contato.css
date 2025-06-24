@@ -18,9 +18,6 @@
     background-image: url(../img/contato.png); 
 }
 
-
-
-
 .fale-conosco {
     display: flex;
     width: 700px;
@@ -169,7 +166,7 @@ li {
 
 }    
  
-  /* ----MOBILE---- */
+    /* ----MOBILE---- */
 @media screen and (max-width: 1024px) {
    
 }
