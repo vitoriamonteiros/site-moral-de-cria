@@ -131,6 +131,9 @@ nav a:hover {
   justify-items: center;
   align-items: center;
   text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .page-img h1 {
@@ -169,7 +172,7 @@ nav a:hover {
   font-size: 64px ;
   margin-bottom: 30px ;
   display: inline-block ;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .titulos::after {
@@ -392,6 +395,8 @@ footer {
     margin: 0.2rem 0;
     text-decoration: none;
   }
+
+  
 
   /* TITULOS DAS SESSOES */
   .titulos {
