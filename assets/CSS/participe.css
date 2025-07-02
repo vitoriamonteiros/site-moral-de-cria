@@ -23,8 +23,8 @@
     padding: 4rem 2rem;
     text-align: center;
 }
-  
 
+/* PARA PARTICIPAR */
 .bloco-participe {
     display: flex;
     align-items: center;
@@ -86,7 +86,81 @@
     height: auto;
 }
 
+/* PERGUNTAS FREQUENTES */
+.faq {
+    padding: 4rem 2rem;
+    max-width: 1600px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: -8%;
+}
+  
+.faq-item {
+    margin-bottom: 0.2rem;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+  
+.faq-question {
+    width: 100%;
+    background-color: var(--color-purple); 
+    color: var(--color-white);
+    text-align: left;
+    padding: 1.5rem;
+    font-family: var(--font-texto);
+    font-size: 22px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.3s;
+}
+  
+.faq-answer {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    padding: 1.5rem;
+    font-family: var(--font-texto);
+    font-size: 22px;
+    display: none;
+    border-top: 2px solid var(--color-purple);
+    text-align: justify;
+    padding-right: 7rem;
+}
+  
+.faq-item.open .faq-question {
+    background-color: var(--color-white);
+    color: var(--color-purple);
+    border-bottom: 1px solid #ccc;
+}
+  
+.faq-item.open .faq-answer {
+    display: block;
+}
+  
+.faq-item.open .arrow {
+    transform: rotate(180deg);
+}
+  
+  /* Seta estilo */
+.arrow {
+    transition: transform 0.3s;
+    font-size: 1.5rem;
+    color: inherit;
+}
+  
+.faq-item.open .arrow {
+    transform: rotate(180deg);
+}
 
+
+/* imagem banner */
+.foto-transformar {
+    width: 100%;
+}
 
     /* ----TABLET---- */
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
@@ -99,24 +173,43 @@
         flex-direction: column-reverse;
         text-align: center;
         margin-top: 0.5rem;
-      }
+    }
     
-      .bloco-texto, .bloco-imagem {
+    .bloco-texto, .bloco-imagem {
         flex: 1 1 100%;
-      }
+    }
     
-      .bloco-imagem img {
+    .bloco-imagem img {
         width: 100%;
         border-radius: 20px;
         margin: 1rem 0;
         
-      }
+    }
     
-      .btn-participe {
+    .btn-participe {
         width: 100%;
         padding: 1rem;
         font-size: 1rem;
         margin-left: 0;
-      }         
+    }      
+    
+    /* perguntas */
+    .faq-question, .faq-answer{
+        font-size: 18px;
+        padding: 1.5rem;
+    }
+
+    /* seta */
+    .arrow {
+        font-size: 1rem;
+    }
+
+    /* imagem banner */
+    .foto-transformar {
+        width: 100%;
+        height: 300px; 
+        object-fit: cover;
+        object-position: left center; 
+    }
 }
     
