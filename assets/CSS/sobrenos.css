@@ -14,151 +14,129 @@
     --font-titulo: 'Cairo', sans-serif;
 }
 
-
 /* banner pagina */
 .page-img {
     background-image: url(../img/sobre-nos.png);
 }
 
-
-
-.titulo-sobreNos{
-    font-family: 'Cairo', sans-serif;
-    font-weight: 700;
-    color: #5C2FCA;
+/* texto sobre */
+.subtitulo{
     text-align: center;
     align-items: center;
-    margin: 2%;
+    margin-top: 2%;
+    color: var(--color-purple);
+    font-weight: 700;
+    margin-bottom: 24px;
     font-size: 36px;
-    position: relative;
+    font-family: var(--font-titulo);
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 
-.texto-sobreNos p {
-    font-weight: 400;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    color: #191919;
-    margin: 20px;
+.container-sobreNos p {
     text-align: justify;
-    margin-left: 5rem;
-    margin-right: 5rem;
-
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;  
 }
 
-.texto-sobreNos #bold {
+.container-sobreNos #bold {
     text-align: center;
 }
 
+/* visao, missao e valores */
 
-
+.titulos {
+    position: relative;
+    display: inline-block; /* isso limita a linha ao tamanho do texto */
+    margin: 0 auto;
+}
 
 .container-missao {
+    position: relative;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     margin-top: 5rem;
+    text-align: center;
+    z-index: 1;
 }
-
-.container-missao h1{
-    margin: 0 auto 8rem auto;
-}
-
-.caixas-missao{
+  
+.caixas-missao {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
-    height: 293px;
-    align-items: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+  
+.container-missao::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
     background-color: #d9d9d9;
-    position: relative;  
+    z-index: 0;
 }
-
-.caixas-missao h2{
-    position: relative;
-    font-family: 'Cairo' sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-top: auto;  
-}
-
-.caixas-missao p {
-    font-family: "inter", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    align-items: center;
+  
+.missao-box {
+    width: 384px;
+    max-width: 100%;
+    height: 374px;
+    border-radius: 30px;
     text-align: center;
-    color: #ffffff;
-    margin-bottom: 2.3em;
-    padding: 20px;
-
+    position: relative;
+    border-bottom: 1.1vh solid var(--color-orange);
+    border-right: 1.1vh solid var(--color-orange);
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    z-index: 2;
+    margin-bottom: 5%;
 }
-
-.icone{
+  
+.missao-box h2 {
+    font-family: var(--font-titulo);
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--color-white);
+    margin: 1rem 0 1rem 0;
+}
+  
+.missao-box p {
+    font-family: var(--font-texto);
+    font-size: 15px;
+    color: var(--color-white);
+    text-align: center;
+    line-height: 1.4;
+    padding: 0 0;
+}
+  
+#missao {
+    background-color: var(--color-green);
+}
+  
+#visao {
+    background-color: var(--color-purple);
+}
+  
+#valores {
+    background-color: var(--color-blue);
+}
+  
+.icone {
     width: 100px;
-    text-align: center;
-    align-items: center;
-    color: #ffffff ;
-    margin-top: 2.5%;
-
-}
-
-#missao{
-    width: 384px;
-    height: 374px;
-    background-color: #1E864B;
-    border-radius: 15%;
-    text-align: center;
-    position: relative;
-    /* margin-top: -15em; */
-    border-bottom-style: solid;
-    border-bottom-width: 1vh;
-    border-bottom-color: #FE7005;
-    border-right-style: solid;
-    border-right-width: 1vh;
-    border-right-color: #FE7005;
-
-}
-
-#visao{
-    width: 384px;
-    height: 374px;
-    background-color: #5C2FCA;
-    border-radius: 15%;
-    text-align: center;
-    position: relative;
-    /* margin-top: -15em; */
-    border-bottom-style: solid;
-    border-bottom-width: 1vh;
-    border-bottom-color: #FE7005;
-    border-right-style: solid;
-    border-right-width: 1vh;
-    border-right-color: #FE7005;
-
-
-}
-
-#valores{
-    width: 384px;
-    height: 374px;
-    background-color: #4897D4;
-    border-radius: 15%;
-    text-align: center;
-    position: relative;
-    /* margin-top: -15em; */
-    border-bottom-style: solid;
-    border-bottom-width: 1vh;
-    border-bottom-color: #FE7005;
-    border-right-style: solid;
-    border-right-width: 1vh;
-    border-right-color: #FE7005;
-
-
+    margin-top: 15px;
 }
 
 
-
-
+/* NOSSA EQUIPE */
 #nossa-equipe {
     text-align: center;
     padding: 5rem 2rem;
@@ -189,11 +167,8 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    transition: 0.5s;
-    
-     
+    transition: 0.5s;   
 }
-
 
 .membro-box-btn {
     border: none;
@@ -213,13 +188,12 @@
     transition: 0.5s;
 }
 
-
 #membro-1, #membro-6 {
-    background-color: #5C2FCA;
+    background-color: var(--color-purple);
 }
 
 #membro-2, #membro-7 {
-    background-color: #4897D4;
+    background-color: var(--color-blue);
 }
 
 #membro-3, #membro-8 {
@@ -242,8 +216,6 @@
     transition: 0.5s;
     
 }
-
-
     
 .popup-container {
     display: flex;
@@ -255,7 +227,7 @@
     background-color: #ffffff;
     margin: auto;
     border-radius: 30px;
-    border: 1px, solid #5C2FCA;
+    border: 1px, solid var(--color-purple);
     position: absolute;
     z-index: 4;
     top: 0;
@@ -266,9 +238,6 @@
     
 }
 
-
-
-
 .popup-img {
     display: flex;
     flex-direction: column;
@@ -276,7 +245,7 @@
     justify-content: center;
     padding: 60px;
     margin: 0px;
-    border-right: 2px solid #5C2FCA;
+    border-right: 2px solid var(--color-purple);
 }
 
 .popup-texto i {
@@ -315,6 +284,52 @@
          
     /* ----MOBILE---- */
 @media screen and (max-width: 1024px) {
-           
+  .subtitulo {
+    font-size: 24px;
+  }  
+  
+  /* missao.. */
+  .caixas-missao {
+    flex-direction: column;
+    background: none;
+    padding: 0;
+    gap: 0;
+  }
+
+  .container-missao::after {
+    display: none;
+  }
+
+  .missao-box {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    border: none;
+    padding: 2rem 2rem;
+    margin-bottom: 0;
+  }
+
+  #missao {
+    background-color: var(--color-green);
+  }
+
+  #visao {
+    background-color: var(--color-purple);
+  }
+
+  #valores {
+    background-color: var(--color-blue);
+  }
+
+  .missao-box h2 {
+    font-size: 32px;
+  }
+
+  .icone {
+    margin-top: 10px;
+  }
+
+
+
 }
     

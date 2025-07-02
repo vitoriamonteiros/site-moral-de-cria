@@ -18,14 +18,14 @@
     background-image: url(../img/contato.png); 
 }
 
-.fale-conosco {
+
+/* .fale-conosco {
     display: flex;
     width: 700px;
     font-family: 'Cairo', sans-serif;
     font-weight: 700;
     color: #5C2FCA;
     left: 20%;
-    /* margin-top: 5%; */
     font-size: 36px;
     position: relative;
     
@@ -152,7 +152,7 @@ li {
     background-color: #fff;
     color: #FE7005;
     transition: 0.3s;
-}
+} */
 
 .map {
     width: 100%;
