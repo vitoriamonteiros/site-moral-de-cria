@@ -135,7 +135,6 @@
     margin-top: 15px;
 }
 
-
 /* NOSSA EQUIPE */
 #nossa-equipe {
     text-align: center;
@@ -166,8 +165,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
+    color: var(--color-white);
     transition: 0.5s;   
+}
+
+.membro-box img{
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .membro-box-btn {
@@ -179,7 +183,7 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    color: #ffffff;
+    color: var(--color-white);
     height: 401px;
     width: 282px;
     z-index: 2;
@@ -188,94 +192,128 @@
     transition: 0.5s;
 }
 
-#membro-1, #membro-6 {
+#membro-1, #membro-5 {
     background-color: var(--color-purple);
 }
 
-#membro-2, #membro-7 {
+#membro-2{
     background-color: var(--color-blue);
 }
 
-#membro-3, #membro-8 {
-    background-color: #1E864B;
+#membro-3 {
+    background-color: var(--color-green);
 }
 
-#membro-4, #membro-5 {
-    background-color: #FE7005;
+#membro-4 {
+    background-color: var(--color-orange);
+}
+
+.membro-box h3{
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.membro-box p{
+    font-family: var(--font-texto);
+    font-size: 20px;
+    margin-top: -5px;
 }
 
 .membro-box:hover {
     cursor: pointer;
-    
     transition: 0.5s;
-
 }
 
 .membro-box:hover .membro-box-btn {
     opacity: 1;
-    transition: 0.5s;
-    
+    transition: 0.5s;   
 }
-    
+
+/* caixa js */
+.popup-texto {
+    text-align: justify;
+    font-family: var(--font-texto);
+    padding: 1% 30px;
+    margin: 30px;
+    max-height: 400px;
+    overflow-y: auto;
+    white-space: pre-line;
+}
+
+#popup-texto {
+    font-size: 15px; 
+    line-height: 1.6;
+    font-family: var(--font-texto);
+    white-space: pre-line;
+}
+  
 .popup-container {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 90vw;
-    height: 538px;
+    min-height: 70%;
+    max-width: 90%;
     background-color: #ffffff;
     margin: auto;
     border-radius: 30px;
-    border: 1px, solid var(--color-purple);
-    position: absolute;
-    z-index: 4;
+    border: 1px solid var(--color-purple);
+    position: fixed;
+    z-index: 999;
     top: 0;
     left: 50%;
-    position: fixed;
     transform: translate(-50%, 15%);
-    display: none;
-    
 }
-
+  
 .popup-img {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px;
-    margin: 0px;
+    padding: 50px;
     border-right: 2px solid var(--color-purple);
 }
 
-.popup-texto i {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: start;
-    
+.popup-img img {
+    width: 180px;           
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* border: 4px solid var(--color-purple); */
 }
 
-.popup-texto {
-    text-align: justify;
-    font-family: 'inter', sans-serif;
-    padding: 30px;
-    margin: 30px;
-    
-    font-size: 16px;
-    font-weight: 400;
+.popup-img h3{
+    font-family: var(--font-titulo);
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.popup-img p{
+    font-family: var(--font-texto);
+    font-size: 20px;
 }
 
 .popup-container i {
-    translate: -20px -235px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
     font-size: 30px;
-    color: #5C2FCA;
+    color: var(--color-purple);
     cursor: pointer;
+    z-index: 1001; 
 }
-
+  
 .open-popup {
     display: flex;
 }
 
+.popup-container.open-popup {
+    display: flex;
+}
 
     /* ----TABLET---- */
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
@@ -329,7 +367,49 @@
     margin-top: 10px;
   }
 
+  /* caixa js */
+  .popup-container {
+    flex-direction: column;
+    padding: 20px;
+    width: 95vw;
+    transform: translate(-50%, 5%);
+    max-height: 90vh;
+    overflow-y: auto;
+  }
 
+  .popup-img {
+    border: none;
+    padding: 20px 0 10px 0;
+  }
+
+  .popup-img img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .popup-img h3 {
+    font-size: 20px;
+  }
+
+  .popup-img p {
+    font-size: 16px;
+  }
+
+  .popup-texto {
+    margin: 0;
+    padding: 0 10px 20px;
+    font-size: 14px;
+  }
+
+  #popup-texto {
+    font-size: 14px;
+  }
+
+  .popup-container i {
+    top: 10px;
+    right: 15px;
+    font-size: 26px;
+  }
 
 }
     
