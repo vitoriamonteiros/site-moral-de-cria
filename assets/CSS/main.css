@@ -277,8 +277,6 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
-    /* width: 384px; */
 }
 
 .profissional {
@@ -287,8 +285,6 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
-    /* width: 384px; */
 }
 
 .esporte {
@@ -297,8 +293,6 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
-    /* width: 384px; */
 }
 
 .projeto-titulo {
@@ -309,6 +303,20 @@
     padding: 35px 0; 
     margin-top: auto;
 }
+
+/* .sustentabilidade,
+.profissional,
+.esporte {
+  width: 100%;
+  max-width: 380px;
+  min-width: 280px;
+  flex: 1 1 300px; 
+  text-align: center;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+} */
+
 
 /* SESSAO NOS ACOMPANHE */
 .nos-acompanhe {
@@ -620,11 +628,29 @@
     }
 
     /* SESSAO PROJETOS */
+    
+    .projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+      
+    .sustentabilidade,
+    .profissional,
+    .esporte {
+        /* width: 100%; */
+        min-width: 300px;
+        max-width: 300px;
+        /* margin: auto; */
+    }
+
     .projeto-titulo {
-        font-size: 24px;
+        font-size: 22px;
         padding: 18px 0;
     }
-    
+
+
+
+
     /* SESSAO NOS ACOMPANHE */
     .moral-2{
         margin-top: 30px;

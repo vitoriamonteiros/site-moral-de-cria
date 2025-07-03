@@ -367,6 +367,10 @@ footer {
     right: 0;
   }
 
+  .logo {
+    padding-left: 0.5rem;
+  }
+  
   .logo-menu {
     display: block;
     width: 120px;
