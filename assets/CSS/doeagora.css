@@ -13,6 +13,10 @@
   --font-titulo: 'Cairo', sans-serif;
 }
 
+.redes p{
+  font-family: var(--font-texto); /*corrigindo texto do footer */
+}
+
 .titulos {
   font-family: var(--font-titulo);
   font-weight: 800;
@@ -161,6 +165,7 @@
   line-height: 1.4;
 }
 
+
 /* MOBILE */
 @media screen and (max-width: 1024px) {
   .titulos {
@@ -172,4 +177,5 @@
   .titulos::after {
     height: 6px; 
   }
+  
 }
