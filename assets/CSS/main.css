@@ -304,19 +304,6 @@
     margin-top: auto;
 }
 
-/* .sustentabilidade,
-.profissional,
-.esporte {
-  width: 100%;
-  max-width: 380px;
-  min-width: 280px;
-  flex: 1 1 300px; 
-  text-align: center;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-} */
-
 
 /* SESSAO NOS ACOMPANHE */
 .nos-acompanhe {
@@ -437,6 +424,32 @@
 }
 
 
+/* PARCEIROS */
+.parceiros {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .parceiros-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* flex-wrap: wrap;  */
+    margin-top: 30px;
+  }
+  
+  .parceiros-container img {
+    max-width: 250px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .parceiros-container img:hover {
+    transform: scale(1.05);
+  }
+  
 
     /* ----TABLET---- */
 @media screen and (min-width: 1025px) and (max-width: 1300px) {
@@ -711,5 +724,16 @@
         position: static !important;
         margin-top: 0 !important;
     }
+
+
+    /* PARCEIROS */
+    .parceiros-container {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    
+      .parceiros-container img {
+        max-width: 40%;
+      }
     
 }
